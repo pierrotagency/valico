@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+@import "mixins";
+
+// Viene de node_modules
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~slick-carousel/slick/slick.scss";
+@import "~fullcalendar/dist/fullcalendar.min.css";
+@import "~selectric/public/selectric.css";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+// Estilos comunes
+@import "base";
+@import "component-base";
+@import "header";
+@import "footer";
+@import "home";
+@import "calendar";
+@import "results";

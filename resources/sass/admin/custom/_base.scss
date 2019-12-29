@@ -1,0 +1,327 @@
+/* doy un alto arriba para que no me coma el menu */
+// #page-container{
+//     padding-top: 100px;
+// }
+
+
+// extension del select2 para donde se necesiten iconitos en el dropdown
+.select2-with-icon{
+
+    .select2-results__option{
+        height: 60px;
+        line-height: 50px;
+
+        img.select2-icon{
+            width: 50px;
+            float: left;
+            margin-right: 5px;
+        }
+
+    }
+
+    &+.select2-container{
+        .select2-selection__rendered{
+
+            img.select2-icon{
+                width: 30px;
+                float: left;
+                margin-top: 2px;
+                margin-right: 5px;
+            }
+
+        }
+    }
+
+}
+
+
+// agregar sublinea en busqueda del select2
+
+.select2-dropdown{
+
+    li.select2-results__option{
+
+        .select2-result-data{
+
+            .select2-result-data__meta{
+
+                .select2-result-data__subtitle{
+                    color: #9E9E9E;
+                    font-size: 0.9em;
+                }
+
+            }
+
+        }
+
+        &.select2-results__option--highlighted{
+
+            .select2-result-data{
+
+                .select2-result-data__meta{
+
+                    .select2-result-data__subtitle{
+                        color: #f1f1f1;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+// los blocks que se abren en un modal no deberian tener el margin bottom porque me genera espacio en el fondo del modal
+.modal-content{
+
+    .block{
+        margin-bottom: 0px;
+    }
+
+
+}
+
+
+// quiero que la barra del tree quede por debajo de la main bar
+#side-overlay{
+    // z-index: 1000 !important;
+    // top: 66px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05) !important;
+
+    .content-side{
+        padding-top: 0px;
+    }
+
+
+}
+
+// tooltips del store
+.popover{
+    max-width: 160px !important;
+}
+
+
+
+
+/* NAVEGADOR DE PAGINAS */
+
+#tree{
+    position: relative;
+    max-height: 100%;
+    height: 100%;
+
+    .shell{
+        max-height: 100%;
+        height: 100%;
+        border:0px solid #000000;
+
+        a{
+            text-decoration:none;
+            color:#666666;
+
+            &:hover{
+                text-decoration:none;
+                color:#000000;
+            }
+
+        }
+
+        .tree-container{
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            height: calc(100% - 35px);
+        }
+
+    }
+
+    .head {
+        border-bottom:1px solid #eaecee;
+        overflow: hidden;
+    }
+
+    .menu{
+        padding:0px 0px 5px 0px;
+        float:left;
+
+        a {
+            margin-right: 10px;
+            padding: 15px;
+            background-color: #fff;
+            height: auto;
+            width: auto;
+            background-position: center;
+            border: 1px solid #f5f5f5;
+        }
+
+    }
+
+    .js-filer-tree{
+        margin-top: 10px;
+
+        i:after{
+            font-family: 'FontAwesome';
+            position: relative;
+            transform: translate(-50%,-50%);
+        }
+
+        i.root:after{
+            content: '\f07b';
+        }
+        i.knot:after{
+            content: '\f07b';
+        }
+        i.leaf:after{
+            content: '\f016';
+        }
+        i.knot_leaf:after{
+            content: '\f07b';
+        }
+
+    }
+
+    .js-filer-cut > a {
+        color: gray;
+    }
+    .js-filer-meter{
+        margin-left: 5px;
+    }
+    span.js-filer-menu img{
+        vertical-align: middle;
+    }
+
+    .js-filer-menu{
+        position: relative;
+
+        > a{
+            width: 16px;
+            height: 16px;
+            vertical-align: top;
+            text-align: center;
+            font-style: normal;
+
+            &[href$="-no"]:hover {
+              cursor: default;
+            }
+
+            &:after{
+                font-family: 'FontAwesome';
+                position: absolute;
+                transform: translate(-50%,-50%);
+            }
+
+            &[class*="-no"]{
+                opacity: 0.4;
+                cursor: default;
+            }
+
+        }
+
+    }
+
+    .jstree-default{
+
+        .jstree-anchor {
+            line-height: 28px;
+            height: 30px;
+        }
+
+        .jstree-icon:empty {
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+        }
+
+    }
+
+    .jstree-container-ul{
+        // overflow-y: auto;
+    }
+
+
+}
+
+
+
+// tiene que ir fuera del selector principal porque este elemento se crea dinamico fuera del tree
+.jstree-contextmenu {
+    z-index: 2000;
+
+    li {
+        i {
+            &:after{
+                font-family: 'FontAwesome';
+                position: absolute;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+}
+
+
+._pvw, ._pvw-no {
+    &:after{
+        content: '\f06e';
+    }
+}
+._sch, ._sch-no {
+    &:after{
+        content: '\f002';
+    }
+}
+._new, ._new-no {
+    &:after{
+        content: '\f15b'; // f07b
+    }
+}
+._add, ._add-no {
+    &:after{
+        content: '\f15b'; // f15b
+    }
+}
+._ren, ._ren-no {
+    &:after{
+        content: '\f031';
+    }
+}
+._del, ._del-no {
+    &:after{
+        content: '\f1f8';
+    }
+}
+._cpy, ._cpy-no {
+    &:after{
+        content: '\f0c5';
+    }
+}
+._cut, ._cut-no {
+    &:after{
+        content: '\f0c4';
+    }
+}
+._pst, ._pst-no {
+    &:after{
+        content: '\f0ea';
+    }
+}
+._cmp, ._cmp-no {
+    &:after{
+        content: '\f009';
+    }
+}
+._edt, ._edt-no {
+    &:after{
+        content: '\f044';
+    }
+}
+
+
+/* FIN NAVEGADOR DE PAGINAS */
