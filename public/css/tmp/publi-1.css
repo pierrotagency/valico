@@ -1,0 +1,49 @@
+.component-publi-1 {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.component-publi-1 .btn-p {
+  width: 23.5%;
+  padding: 0em !important;
+  margin-bottom: 2%;
+  border: 0px !important;
+  border-radius: 0px !important;
+}
+
+.component-publi-1 .btn-p:last-child {
+  margin-right: 0;
+}
+
+.component-publi-1 .btn-p:hover {
+  box-shadow: 5.6px 24.4px 30px 0 rgba(174, 174, 174, 0.14);
+}
+
+.component-publi-1 .btn-p__img {
+  height: 100% !important;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .component-publi-1 .btn-p {
+    width: 48%;
+    margin-bottom: 3%;
+  }
+}
+
+.holder-sidebar .component:first-child {
+  padding-top: 0 !important;
+}
+
+.holder-sidebar .component-publi-1 .btn-p {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+/*# sourceMappingURL=publi-1.css.map*/

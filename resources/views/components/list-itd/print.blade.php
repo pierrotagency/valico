@@ -9,7 +9,7 @@
                 <li class="component-list-itd__item">
                     <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="component-list-itd__link">
                         <i style="background:url('{{Resizer::widen(600,gg($i->fields->image,''))}}') no-repeat left;background-size:contain;" class="component-list-itd__icon"></i>
-                        <h3 class="component-list-itd__title">{{$i->fields->name or ''}}</h3>
+                        <h3 class="component-list-itd__title">{{$i->fields->name ?? ''}}</h3>
                         <p class="component-list-itd__text">{!! field($i->fields->description, '') !!}</p>
                     </a>
                 </li>

@@ -1,0 +1,16 @@
+.component-title-large + .component {
+  padding-top: 0;
+}
+
+.component-title-large__text {
+  z-index: 2;
+  color: #001a33;
+  font-size: 1.875rem;
+  margin-top: 0;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: -1px;
+}
+
+
+/*# sourceMappingURL=title-large.css.map*/

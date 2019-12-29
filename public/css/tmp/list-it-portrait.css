@@ -1,0 +1,63 @@
+.component-list-it-portrait {
+  width: 100%;
+}
+
+.component-list-it-portrait li {
+  list-style: none;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-it-portrait {
+    width: 100%;
+  }
+}
+
+.component-list-it-portrait__container {
+  width: 100%;
+  padding: 0;
+}
+
+.component-list-it-portrait__item {
+  display: block;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.component-list-it-portrait__link {
+  min-height: 7em;
+  padding: 1em 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.component-list-it-portrait__link:hover .component-list-it-portrait__text {
+  color: #008fd5;
+}
+
+.component-list-it-portrait__icon {
+  width: 5em;
+  height: 5em;
+  display: block;
+}
+
+.component-list-it-portrait__text {
+  margin: 0;
+  width: 100%;
+  padding: 0 5%;
+  line-height: 1.4;
+  color: #464646;
+  letter-spacing: -0.4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font: 500 1.5625rem "Nunito", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-it-portrait__text {
+    font-size: 1.25rem;
+  }
+}
+
+
+/*# sourceMappingURL=list-it-portrait.css.map*/

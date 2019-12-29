@@ -18,7 +18,7 @@
                 <div id="sb-search" class="main-header__search sb-search" >
                     <form method="get" action="{{route('search_results')}}">
                         <p class="main-header__search--text sb-search-text">Buscar</p>
-                        <input class="main-header__search--input sb-search-input" onkeyup="buttonUp();" placeholder="" onblur="monkey();" type="search" value="{{$q or ''}}" name="q" id="search">
+                        <input class="main-header__search--input sb-search-input" onkeyup="buttonUp();" placeholder="" onblur="monkey();" type="search" value="{{$q ?? ''}}" name="q" id="search">
                         <input class="main-header__search--submit sb-search-submit" type="submit">
                         <span class="main-header__search--icon sb-icon-search">
                         <svg id="search-icon" data-name="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M40,15A25,25,0,1,1,15,40,25,25,0,0,1,40,15Zm0-4A29,29,0,1,0,59,61.84L85.59,88.41a2.08,2.08,0,0,0,2.85,0,2.11,2.11,0,0,0,0-2.88L61.87,59A29,29,0,0,0,40,11Z"/></svg>
@@ -49,7 +49,7 @@
                         <div class="js-header-search header-nav__search__container">
                             <form method="get" action="{{route('search_results')}}" class="header-nav__search">
                                 <div class="header-nav__search__wrapper">
-                                    <input type="search" value="{{$q or ''}}" name="q" class="js-search-input header-nav__search__input" id="header-nav__search__input">
+                                    <input type="search" value="{{$q ?? ''}}" name="q" class="js-search-input header-nav__search__input" id="header-nav__search__input">
                                     <label for="header-nav__search__input" class="header-nav__search__placeholder">
                                         <span class="header-nav__search__placeholder__text">Buscar</span>
                                         <span class="header-nav__search__placeholder__icon"><i class="fas fa-search"></i></span>

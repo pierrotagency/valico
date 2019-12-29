@@ -8,7 +8,7 @@
 
                     <p class="component-alert__text">
                         @if(has($fields->title))
-                            <span class="component-alert__text__highlighted">{{ $fields->title or '' }}</span>
+                            <span class="component-alert__text__highlighted">{{ $fields->title ?? '' }}</span>
                         @endif
 
                         @if(has($fields->subtitle))
@@ -28,7 +28,7 @@
 
                     <p class="component-alert__text">
                         @if(has($fields->title))
-                            <span class="component-alert__text__highlighted">{{ $fields->title or '' }}</span>
+                            <span class="component-alert__text__highlighted">{{ $fields->title ?? '' }}</span>
                         @endif
 
                         @if(has($fields->subtitle))

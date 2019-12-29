@@ -1,0 +1,60 @@
+.component-btn-p-stacked {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.component-btn-p-stacked .btn-p {
+  width: 23.5%;
+  height: 14em !important;
+  padding: 2% 3% !important;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.component-btn-p-stacked .btn-p:nth-child(4n) {
+  margin-right: 0;
+}
+
+@media (max-width: 991.98px) {
+  .component-btn-p-stacked .btn-p {
+    padding: 2% 4% !important;
+    height: 12em !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .component-btn-p-stacked .btn-p {
+    width: 48.5%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+  }
+
+  .component-btn-p-stacked .btn-p:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-btn-p-stacked .btn-p {
+    height: 10em !important;
+  }
+}
+
+.component-btn-p-stacked .btn-p:last-child {
+  margin-right: 0;
+}
+
+.component-btn-p-stacked .btn-p:hover {
+  box-shadow: 5.6px 24.4px 30px 0 rgba(174, 174, 174, 0.14);
+}
+
+.component-btn-p-stacked .btn-p__img {
+  height: 85% !important;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+
+/*# sourceMappingURL=btn-p-stacked.css.map*/

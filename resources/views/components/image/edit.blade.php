@@ -9,19 +9,19 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image or ''}}">
+                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image ?? ''}}">
                     <label for="image">Imagen</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="alt" placeholder=""  value="{{ $fields->alt or '' }}">
+                    <input type="text" class="form-control field" name="alt" placeholder=""  value="{{ $fields->alt ?? '' }}">
                     <label for="alt">Epígrafe</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link" class="field" value="{{$fields->link or ''}}" />
+                    <input type="hidden" name="link" class="field" value="{{$fields->link ?? ''}}" />
                     <label for="link">Link</label>
                 </div>
             </div>

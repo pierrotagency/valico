@@ -1,0 +1,17 @@
+.component-line {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.component-line hr {
+  margin: 0;
+  position: relative;
+  border-top: #e6e6e6 1px solid;
+}
+
+.component-line hr.has-margins {
+  margin: 40px 0;
+}
+
+
+/*# sourceMappingURL=line.css.map*/

@@ -1,0 +1,104 @@
+.component-timeline__date-title {
+  color: #001a33;
+  font: 400 1.375rem "Nunito", sans-serif;
+}
+
+.component-timeline__container {
+  margin-top: 2em;
+}
+
+.component-timeline__event {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  padding-left: 2.5em;
+  padding-bottom: 1.5em;
+}
+
+.component-timeline__event::before {
+  content: "";
+  left: 0;
+  height: 100%;
+  margin-top: 0.8em;
+  margin-left: 0.25em;
+  position: absolute;
+  border-left: 1px solid #001a33;
+}
+
+.component-timeline__event:last-child::before {
+  border-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+  .component-timeline__event {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+.component-timeline__event-time {
+  margin: 0;
+  width: 15%;
+  color: #001a33;
+  display: -webkit-box;
+  display: flex;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-timeline__event-time::before {
+  content: "";
+  left: -2.3rem;
+  z-index: 1;
+  width: 0.62em;
+  height: 0.62em;
+  display: block;
+  margin-top: 0.4em;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #001a33;
+}
+
+@media (max-width: 767.98px) {
+  .component-timeline__event-time {
+    width: 100%;
+    margin-bottom: 0.6em;
+  }
+}
+
+.component-timeline__event-content {
+  width: 80%;
+  padding-right: 2em;
+}
+
+@media (max-width: 767.98px) {
+  .component-timeline__event-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.component-timeline__event-title {
+  margin: 0;
+  margin-top: 1em;
+  color: #464646;
+  font: 500 1rem "Nunito", sans-serif;
+}
+
+.component-timeline__event-title:first-child {
+  margin-top: 0;
+}
+
+.component-timeline__event-desc {
+  color: #464646;
+  font: 400 1rem "Nunito", sans-serif;
+  margin: 0;
+}
+
+.component-timeline__event-desc:last-child {
+  margin-bottom: 1em;
+}
+
+
+/*# sourceMappingURL=timeline.css.map*/

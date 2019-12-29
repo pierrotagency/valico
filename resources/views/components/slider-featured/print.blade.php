@@ -9,7 +9,7 @@
                 <div class="component-slider-featured__item__description">
                     <h3 class="component-slider-featured__item__title">{!! field($i->fields->title, '') !!}</h3>
                     <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="component-slider-featured__item__link">
-                        <span class="component-slider-featured__item__link__text">{{$i->fields->cta or ''}}</span>
+                        <span class="component-slider-featured__item__link__text">{{$i->fields->cta ?? ''}}</span>
                         <span class="component-slider-featured__item__link__arrow"></span>
                     </a>
                 </div>

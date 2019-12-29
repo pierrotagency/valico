@@ -1,0 +1,64 @@
+.component-title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.component-title + .component {
+  padding-top: 0;
+}
+
+.component-title__text {
+  color: #001a33;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.component-title__text__span--bold {
+  font-weight: 700;
+}
+
+.component-title__link {
+  position: relative;
+  padding-right: 3rem;
+  max-width: 50%;
+  margin-left: 2rem;
+  color: #001a33;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .component-title__link__text {
+    display: none;
+  }
+}
+
+.component-title__link:hover {
+  color: #001a33;
+}
+
+.component-title__link:hover .component-title__link__arrow {
+  background: url(/images/arrow-right_hover.svg) no-repeat center;
+}
+
+.component-title__link__arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+
+/*# sourceMappingURL=title.css.map*/

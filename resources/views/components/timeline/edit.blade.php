@@ -5,7 +5,7 @@
 
     <div class="form-group">
         <div class="form-material">
-            <textarea class="form-control field" name="day" rows="2" placeholder="">{{ $fields->day or '' }}</textarea>
+            <textarea class="form-control field" name="day" rows="2" placeholder="">{{ $fields->day ?? '' }}</textarea>
             <label for="day">Fecha</label>
         </div>
     </div>
@@ -73,19 +73,19 @@
 
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="text" class="form-control listfield" name="hour" data-name="hour" placeholder="" value="{{$i->fields->hour or ''}}">
+                                    <input type="text" class="form-control listfield" name="hour" data-name="hour" placeholder="" value="{{$i->fields->hour ?? ''}}">
                                     <label for="hour">Hora</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-material">
-                                    <textarea class="form-control listfield" name="title" data-name="title" rows="2" placeholder="">{{ $i->fields->title or '' }}</textarea>
+                                    <textarea class="form-control listfield" name="title" data-name="title" rows="2" placeholder="">{{ $i->fields->title ?? '' }}</textarea>
                                     <label for="title">Título</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-material">
-                                    <textarea class="form-control listfield" name="body" data-name="body" rows="2" placeholder="">{{ $i->fields->body or '' }}</textarea>
+                                    <textarea class="form-control listfield" name="body" data-name="body" rows="2" placeholder="">{{ $i->fields->body ?? '' }}</textarea>
                                     <label for="body">Cuerpo</label>
                                 </div>
                             </div>

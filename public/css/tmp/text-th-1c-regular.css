@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.component-text-th-1c-regular__container {
+  width: 100%;
+}
+
+.component-text-th-1c-regular__title {
+  color: #001a33;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.6px;
+  font: 400 1.375rem "Nunito", sans-serif;
+}
+
+.component-text-th-1c-regular__text {
+  margin: 0;
+  margin-bottom: 1em;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-th-1c-regular__text :last-child {
+  margin-bottom: 0;
+}
+
+.component-text-th-1c-regular__text blockquote {
+  color: #001a33;
+  font-weight: 300;
+  font-size: 1.5625rem;
+}
+
+.component-text-th-1c-regular__text blockquote:before {
+  content: "\201C";
+}
+
+.component-text-th-1c-regular__text blockquote:after {
+  content: "\201D";
+}
+
+.component-text-th-1c-regular__text a,
+.component-text-th-1c-regular__text a:hover {
+  color: #008fd5;
+}
+
+
+/*# sourceMappingURL=text-th-1c-regular.css.map*/

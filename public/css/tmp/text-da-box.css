@@ -1,0 +1,64 @@
+.component-text-da-box {
+  padding-bottom: 0 !important;
+}
+
+.component-text-da-box + .component-text-da-box,
+.component-text-da-box + .component-text-tid-box,
+.component-text-da-box + .component-text-h-box,
+.component-text-da-box + .component-text-tdp-box {
+  padding-top: 1rem;
+}
+
+.component-text-da-box__container {
+  display: -webkit-box;
+  display: flex;
+  padding: 1em 1.4em;
+  border-radius: 5px;
+  border: #e6e6e6 1px solid;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .component-text-da-box__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
+  }
+}
+
+.component-text-da-box__text p {
+  margin: 0;
+  color: #001a33;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-da-box .btn-ti-borderless {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+.component-text-da-box a:not(.btn-ti-borderless),
+.component-text-da-box a:not(.btn-ti-borderless):hover {
+  color: #008fd5;
+}
+
+@media (max-width: 767.98px) {
+  .component-text-da-box .btn-ti-borderless {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+
+  .component-text-da-box__text {
+    margin-bottom: 0.8em;
+  }
+}
+
+
+/*# sourceMappingURL=text-da-box.css.map*/

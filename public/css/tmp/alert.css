@@ -1,0 +1,49 @@
+.component-alert__wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  padding: 1.25rem;
+}
+
+.component-alert__wrapper::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+  background: url(/images/alert.svg?22462f3aa3adeb88865fda471b919a89) no-repeat center;
+  background-size: contain;
+}
+
+.component-alert__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.component-alert__content p {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.component-alert__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: #001a33;
+}
+
+.component-alert__text__highlighted {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/*# sourceMappingURL=alert.css.map*/

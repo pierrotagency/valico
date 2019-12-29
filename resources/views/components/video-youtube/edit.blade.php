@@ -17,7 +17,7 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="video" placeholder=""  value="{{ $fields->video or '' }}">
+                    <input type="text" class="form-control field" name="video" placeholder=""  value="{{ $fields->video ?? '' }}">
                     <label for="video">Video ID</label>
                 </div>
             </div>

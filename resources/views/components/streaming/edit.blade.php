@@ -18,31 +18,31 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="label" placeholder=""  value="{{ $fields->label or '' }}">
+                    <input type="text" class="form-control field" name="label" placeholder=""  value="{{ $fields->label ?? '' }}">
                     <label for="label">Etiqueta</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="video" placeholder=""  value="{{ $fields->video or '' }}">
+                    <input type="text" class="form-control field" name="video" placeholder=""  value="{{ $fields->video ?? '' }}">
                     <label for="video">Youtube Video ID</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="cta" placeholder=""  value="{{ $fields->cta or '' }}">
+                    <input type="text" class="form-control field" name="cta" placeholder=""  value="{{ $fields->cta ?? '' }}">
                     <label for="cta">Etiqueta del Link</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link" class="field" value="{{$fields->link or ''}}" />
+                    <input type="hidden" name="link" class="field" value="{{$fields->link ?? ''}}" />
                     <label for="link">Link</label>
                 </div>
             </div>
@@ -57,7 +57,7 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" name="subscribelink" class="form-control field" value="{{$fields->subscribelink or ''}}" />
+                    <input type="text" name="subscribelink" class="form-control field" value="{{$fields->subscribelink ?? ''}}" />
                     <label for="subscribelink">Canal de Youtube</label>
                 </div>
             </div>

@@ -8,31 +8,31 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="description" rows="2" placeholder="">{{ $fields->description or '' }}</textarea>
+                    <textarea class="form-control field" name="description" rows="2" placeholder="">{{ $fields->description ?? '' }}</textarea>
                     <label for="description">Descripción</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="lat" placeholder="lat por ej -34.5974168"  value="{{ $fields->lat or '' }}">
+                    <input type="text" class="form-control field" name="lat" placeholder="lat por ej -34.5974168"  value="{{ $fields->lat ?? '' }}">
                     <label for="lat">Latitud</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="lng" placeholder="lng por ej -58.5117254"  value="{{ $fields->lng or '' }}">
+                    <input type="text" class="form-control field" name="lng" placeholder="lng por ej -58.5117254"  value="{{ $fields->lng ?? '' }}">
                     <label for="lng">Longitud</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="zoom" placeholder="zoom por ej 15"  value="{{ $fields->zoom or '' }}">
+                    <input type="text" class="form-control field" name="zoom" placeholder="zoom por ej 15"  value="{{ $fields->zoom ?? '' }}">
                     <label for="zoom">Zoom</label>
                 </div>
             </div>

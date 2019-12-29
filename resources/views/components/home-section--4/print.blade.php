@@ -9,7 +9,7 @@
             <div class="home-title">
                 <h2 class="home-title__text"><span class="home-title__text__span">Próximas</span> <strong class="home-title__text__span home-title__text__span--bold">Actividades</strong></h2>
                 <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="home-title__link">
-                    <span class="home-title__link__text">{{$fields->cta or ''}}</span>
+                    <span class="home-title__link__text">{{$fields->cta ?? ''}}</span>
                     <span class="home-title__link__arrow"></span>
                 </a>
             </div>
@@ -17,7 +17,7 @@
                 <div class="home-card-1ptd-4td__wrapper">
                     <a href="{{ getLink($fields->link1) }}" target="{{ gg($fields->blank1)==1?'_blank':'_self' }}"  class="home-card-1ptd-4td__card home-card-1ptd-4td__card--highlighted" style="background-image: url('{{Resizer::widen(900,gg($fields->image1,''))}}');">
                         <div class="home-card-1ptd-4td__card__top">
-                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix1 or '' }}</h4>
+                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix1 ?? '' }}</h4>
                             <h3 class="home-card-1ptd-4td__card__title">{!! field($fields->title1) !!}</h3>
                         </div>
                         <div class="home-card-1ptd-4td__card__bottom">
@@ -28,7 +28,7 @@
                 <div class="home-card-1ptd-4td__wrapper">
                     <a href="{{ getLink($fields->link2) }}" target="{{ gg($fields->blank2)==1?'_blank':'_self' }}"  class="home-card-1ptd-4td__card">
                         <div class="home-card-1ptd-4td__card__top">
-                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix2 or '' }}</h4>
+                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix2 ?? '' }}</h4>
                             <h3 class="home-card-1ptd-4td__card__title">{!! field($fields->title2) !!}</h3>
                         </div>
                         <div class="home-card-1ptd-4td__card__bottom">
@@ -38,7 +38,7 @@
                     </a>
                     <a href="{{ getLink($fields->link3) }}" target="{{ gg($fields->blank3)==1?'_blank':'_self' }}"  class="home-card-1ptd-4td__card">
                         <div class="home-card-1ptd-4td__card__top">
-                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix3 or '' }}</h4>
+                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix3 ?? '' }}</h4>
                             <h3 class="home-card-1ptd-4td__card__title">{!! field($fields->title3) !!}</h3>
                         </div>
                         <div class="home-card-1ptd-4td__card__bottom">
@@ -48,7 +48,7 @@
                     </a>
                     <a href="{{ getLink($fields->link4) }}" target="{{ gg($fields->blank4)==1?'_blank':'_self' }}" class="home-card-1ptd-4td__card">
                         <div class="home-card-1ptd-4td__card__top">
-                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix4 or '' }}</h4>
+                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix4 ?? '' }}</h4>
                             <h3 class="home-card-1ptd-4td__card__title">{!! field($fields->title4) !!}</h3>
                         </div>
                         <div class="home-card-1ptd-4td__card__bottom">
@@ -58,7 +58,7 @@
                     </a>
                     <a href="{{ getLink($fields->link5) }}" target="{{ gg($fields->blank5)==1?'_blank':'_self' }}" class="home-card-1ptd-4td__card">
                         <div class="home-card-1ptd-4td__card__top">
-                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix5 or '' }}</h4>
+                            <h4 class="home-card-1ptd-4td__card__subtitle">{{ $fields->appendix5 ?? '' }}</h4>
                             <h3 class="home-card-1ptd-4td__card__title">{!! field($fields->title5) !!}</h3>
                         </div>
                         <div class="home-card-1ptd-4td__card__bottom">
@@ -75,10 +75,10 @@
 
                         <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="home-events__link">
                             <div class="home-events__date">
-                                <span class="home-events__date__text">{{$i->fields->day or ''}}</span>
-                                <span class="home-events__date__number">{{$i->fields->date or ''}}</span>
+                                <span class="home-events__date__text">{{$i->fields->day ?? ''}}</span>
+                                <span class="home-events__date__number">{{$i->fields->date ?? ''}}</span>
                             </div>
-                            <span class="home-events__link__text">{{$i->fields->name or ''}}</span>
+                            <span class="home-events__link__text">{{$i->fields->name ?? ''}}</span>
                         </a>
 
                     @endforeach

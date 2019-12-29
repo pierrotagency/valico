@@ -7,7 +7,7 @@
 
             <div class="component-card-itda__card">
                 <img src="{{Resizer::widen(80,gg($i->fields->image,''))}}" alt="" class="component-card-itda__card__icon">
-                <h3 class="component-card-itda__card__title">{{$i->fields->name or ''}}</h3>
+                <h3 class="component-card-itda__card__title">{{$i->fields->name ?? ''}}</h3>
                 <div class="component-card-itda__card__content">{!! field($i->fields->description, '') !!}</div>
                 @if(isset($i->fields->link) && $i->fields->link != '')
                 <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="component-card-itda__card__link">

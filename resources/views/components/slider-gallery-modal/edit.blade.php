@@ -78,19 +78,19 @@
 
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="hidden" class="listfield" name="image" data-name="image" value="{{$i->fields->image or ''}}">
+                                    <input type="hidden" class="listfield" name="image" data-name="image" value="{{$i->fields->image ?? ''}}">
                                     <label for="image">Imagen</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-material">
-                                    <textarea class="form-control listfield" name="description" data-name="description" rows="2" placeholder="">{{$i->fields->description or ''}}</textarea>
+                                    <textarea class="form-control listfield" name="description" data-name="description" rows="2" placeholder="">{{$i->fields->description ?? ''}}</textarea>
                                     <label for="description">Descripción</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="hidden" name="link" class="listfield" data-name="link" value="{{$i->fields->link or ''}}" />                      
+                                    <input type="hidden" name="link" class="listfield" data-name="link" value="{{$i->fields->link ?? ''}}" />                      
                                     <label for="link">Link</label>
                                 </div>
                             </div>

@@ -8,7 +8,7 @@
             @if(has($i->fields->link))
                 <a href="{{ getLink($i->fields->link)}}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="btn btn-t">{!! field($i->fields->name, 'Link') !!}</a>
             @else
-                <a href="{{$i->fields->attach or ''}}" target="_blank" class="btn btn-ti">{!! field($i->fields->name, 'Descarga') !!}</a>
+                <a href="{{$i->fields->attach ?? ''}}" target="_blank" class="btn btn-ti">{!! field($i->fields->name, 'Descarga') !!}</a>
             @endif
 
         @endforeach

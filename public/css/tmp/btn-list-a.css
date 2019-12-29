@@ -1,0 +1,36 @@
+.component-btn-list-a {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.component-btn-list-a li {
+  list-style: none;
+}
+
+@media (max-width: 767.98px) {
+  .component-btn-list-a {
+    width: 100%;
+  }
+}
+
+.component-btn-list-a__container {
+  width: 100%;
+}
+
+.component-btn-list-a .btn {
+  width: 100%;
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+
+/*# sourceMappingURL=btn-list-a.css.map*/

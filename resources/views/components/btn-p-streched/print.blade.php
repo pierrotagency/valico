@@ -5,7 +5,7 @@
         @foreach($fields->list as $i)
 
             <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="btn-p">
-                <img src="{{Resizer::widen(600,gg($i->fields->image,''))}}" class="btn-p__img" alt="{{$i->fields->alt or ''}}">
+                <img src="{{Resizer::widen(600,gg($i->fields->image,''))}}" class="btn-p__img" alt="{{$i->fields->alt ?? ''}}">
             </a>
 
         @endforeach

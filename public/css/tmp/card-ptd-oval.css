@@ -1,0 +1,96 @@
+.component-card-ptd-oval {
+  display: -webkit-box;
+  display: flex;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  width: auto !important;
+  flex-wrap: wrap;
+}
+
+.component-card-ptd-oval__card {
+  -webkit-box-flex: 0;
+          flex: 0 0 calc(25% - 1rem);
+  background-color: #e6e6e6;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  color: #464646;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .component-card-ptd-oval__card {
+    -webkit-box-flex: 0;
+            flex: 0 0 calc(50% - 1rem);
+    padding: 1rem;
+  }
+}
+
+.component-card-ptd-oval__card__img-wrapper {
+  width: 8.8rem;
+  height: 8.8rem;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.component-card-ptd-oval__card__img-wrapper + .component-card-ptd-oval__card__title {
+  margin-top: 1.375rem;
+}
+
+@media (max-width: 575.98px) {
+  .component-card-ptd-oval__card__img-wrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.component-card-ptd-oval__card__img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.component-card-ptd-oval__card__title {
+  color: inherit;
+  font-weight: 500;
+  font-size: 1.375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.component-card-ptd-oval__card__title + .component-card-ptd-oval__card__description {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .component-card-ptd-oval__card__title {
+    font-size: 1.2rem;
+  }
+}
+
+.component-card-ptd-oval__card__description {
+  color: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .component-card-ptd-oval__card__description {
+    font-size: 0.85rem;
+  }
+}
+
+
+/*# sourceMappingURL=card-ptd-oval.css.map*/

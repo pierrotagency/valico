@@ -5,19 +5,19 @@
 
     <div class="form-group">
         <div class="form-material">
-            <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+            <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
             <label for="title">Título</label>
         </div>
     </div>
   {{--   <div class="form-group">
         <div class="form-material">
-            <input type="text" class="form-control field" name="cta" placeholder="" value="{{ $fields->cta or '' }}">
+            <input type="text" class="form-control field" name="cta" placeholder="" value="{{ $fields->cta ?? '' }}">
             <label for="cta">Etiqueta del botón</label>
         </div>
     </div>
     <div class="form-group">
         <div class="form-material">
-            <input type="text" class="form-control field" name="link" placeholder="" value="{{ $fields->link or '' }}">
+            <input type="text" class="form-control field" name="link" placeholder="" value="{{ $fields->link ?? '' }}">
             <label for="link">Link del botón</label>
         </div>
     </div>

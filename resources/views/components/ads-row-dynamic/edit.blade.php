@@ -69,17 +69,17 @@
 
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="text" class="form-control listfield" name="name" data-name="name" value="{{ $i->fields->name or '' }}"/>
+                                    <input type="text" class="form-control listfield" name="name" data-name="name" value="{{ $i->fields->name ?? '' }}"/>
                                     <label for="name">Nombre</label>
-                                    <input type="hidden" class="form-control listfield" name="uuid" data-name="uuid" value="{{ $i->fields->uuid or '' }}"/>
+                                    <input type="hidden" class="form-control listfield" name="uuid" data-name="uuid" value="{{ $i->fields->uuid ?? '' }}"/>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="text" class="form-control listfield" name="name_analytics" data-name="name_analytics" value="{{ $i->fields->name_analytics or '' }}"/>
+                                    <input type="text" class="form-control listfield" name="name_analytics" data-name="name_analytics" value="{{ $i->fields->name_analytics ?? '' }}"/>
                                     <label for="name">Nombre Analytics</label>
-                                    <input type="hidden" class="form-control listfield" name="uuid" data-name="uuid" value="{{ $i->fields->uuid or '' }}"/>
+                                    <input type="hidden" class="form-control listfield" name="uuid" data-name="uuid" value="{{ $i->fields->uuid ?? '' }}"/>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./resources/views/components/news-extended/style.scss"],"names":[],"mappings":"AAKI;EACI;CAJR","file":"/css/tmp/news-extended.css","sourcesContent":["@import \"./resources/sass/component\";\n\n.component-news-extended {\n\n\n    .home-list-pt__block{\n        width: 25%;\n    }\n}"],"sourceRoot":""}

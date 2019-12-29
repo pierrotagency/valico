@@ -18,28 +18,28 @@
                 @if(isset($items[1]))
                 <a href="{{ $items[1]->getLink()['href'] }}" target="{{$items[1]->getLink()['target']}}" class="home-card-1ptd-4td__card" style="background-image: url('{{Resizer::widen(900,$items[1]->cover->image)}}');">
                     <div class="home-card-1ptd-4td__card__bottom">
-                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[1]->cover->title or '' }}</h3>
+                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[1]->cover->title ?? '' }}</h3>
                     </div>
                 </a>
                 @endif
                 @if(isset($items[2]))
                 <a href="{{ $items[2]->getLink()['href'] }}" target="{{$items[2]->getLink()['target']}}" class="home-card-1ptd-4td__card" style="background-image: url('{{Resizer::widen(900,$items[2]->cover->image)}}');">
                     <div class="home-card-1ptd-4td__card__bottom">
-                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[2]->cover->title or '' }}</h3>
+                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[2]->cover->title ?? '' }}</h3>
                     </div>
                 </a>
                 @endif
                 @if(isset($items[3]))
                 <a href="{{ $items[3]->getLink()['href'] }}" target="{{$items[3]->getLink()['target']}}" class="home-card-1ptd-4td__card" style="background-image: url('{{Resizer::widen(900,$items[3]->cover->image)}}');">
                     <div class="home-card-1ptd-4td__card__bottom">
-                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[3]->cover->title or '' }}</h3>
+                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[3]->cover->title ?? '' }}</h3>
                     </div>
                 </a>
                 @endif
                 @if(isset($items[4]))
                 <a href="{{ $items[4]->getLink()['href'] }}" target="{{$items[4]->getLink()['target']}}" class="home-card-1ptd-4td__card" style="background-image: url('{{Resizer::widen(900,$items[4]->cover->image)}}');">
                     <div class="home-card-1ptd-4td__card__bottom">
-                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[4]->cover->title or '' }}</h3>
+                        <h3 class="home-card-1ptd-4td__card__title">{{ $items[4]->cover->title ?? '' }}</h3>
                     </div>
                 </a>
                 @endif

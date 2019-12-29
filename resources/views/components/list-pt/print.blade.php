@@ -10,7 +10,7 @@
                 <a href="{{$i->getLink()['href']}}" target="{{$i->getLink()['target']}}" class="component-list-pt__block">
                     <div class="component-list-pt__img" style="background:url('{{Resizer::widen(900,$i->cover->image)}}') no-repeat center;background-size:cover;"></div>
                     <p class="component-list-pt__text">
-                        {{$i->cover->title or ''}}
+                        {{$i->cover->title ?? ''}}
                     </p>
                 </a>
 

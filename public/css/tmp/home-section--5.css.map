@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./resources/views/components/home-section--5/style.scss"],"names":[],"mappings":"AAEA;EACI;EACA;CADJ","file":"/css/tmp/home-section--5.css","sourcesContent":["@import \"./resources/sass/component\";\n\n.component-home-section--5 {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n}"],"sourceRoot":""}

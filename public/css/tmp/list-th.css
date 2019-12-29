@@ -1,0 +1,45 @@
+.component-list-th {
+  width: 100%;
+}
+
+.component-list-th li {
+  list-style: none;
+}
+
+.component-list-th *:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-th {
+    width: 100%;
+  }
+}
+
+.component-list-th__container {
+  width: 100%;
+  padding: 0;
+}
+
+.component-list-th__item {
+  padding: 2.5em 0 1.5em;
+  border-bottom: #e6e6e6 1px solid;
+}
+
+.component-list-th__title {
+  color: #001a33;
+  margin-bottom: 0.8em;
+  font: 500 1.375rem "Nunito", sans-serif;
+}
+
+.component-list-th__text {
+  margin: 0;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+
+/*# sourceMappingURL=list-th.css.map*/

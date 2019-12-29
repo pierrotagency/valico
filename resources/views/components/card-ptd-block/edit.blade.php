@@ -10,25 +10,25 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image or ''}}">
+                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image ?? ''}}">
                     <label for="image">Imagen</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="subtitle" rows="2" placeholder="">{{ $fields->subtitle or '' }}</textarea>
+                    <textarea class="form-control field" name="subtitle" rows="2" placeholder="">{{ $fields->subtitle ?? '' }}</textarea>
                     <label for="subtitle">Subtítulo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link" class="field" value="{{$fields->link or ''}}" />
+                    <input type="hidden" name="link" class="field" value="{{$fields->link ?? ''}}" />
                     <label for="link">Link</label>
                 </div>
             </div>
@@ -45,25 +45,25 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="image2" data-name="image2" value="{{$fields->image2 or ''}}">
+                    <input type="hidden" class="field" name="image2" data-name="image2" value="{{$fields->image2 ?? ''}}">
                     <label for="image">Imagen</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title2" rows="2" placeholder="">{{ $fields->title2 or '' }}</textarea>
+                    <textarea class="form-control field" name="title2" rows="2" placeholder="">{{ $fields->title2 ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="subtitle2" rows="2" placeholder="">{{ $fields->subtitle2 or '' }}</textarea>
+                    <textarea class="form-control field" name="subtitle2" rows="2" placeholder="">{{ $fields->subtitle2 ?? '' }}</textarea>
                     <label for="subtitle">Subtítulo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link2" class="field" value="{{$fields->link2 or ''}}" />
+                    <input type="hidden" name="link2" class="field" value="{{$fields->link2 ?? ''}}" />
                     <label for="link2">Link</label>
                 </div>
             </div>
@@ -80,25 +80,25 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="image3" data-name="image3" value="{{$fields->image3 or ''}}">
+                    <input type="hidden" class="field" name="image3" data-name="image3" value="{{$fields->image3 ?? ''}}">
                     <label for="image">Imagen</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title3" rows="2" placeholder="">{{ $fields->title3 or '' }}</textarea>
+                    <textarea class="form-control field" name="title3" rows="2" placeholder="">{{ $fields->title3 ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="subtitle3" rows="2" placeholder="">{{ $fields->subtitle3 or '' }}</textarea>
+                    <textarea class="form-control field" name="subtitle3" rows="2" placeholder="">{{ $fields->subtitle3 ?? '' }}</textarea>
                     <label for="subtitle">Subtítulo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link3" class="field" value="{{$fields->link3 or ''}}" />
+                    <input type="hidden" name="link3" class="field" value="{{$fields->link3 ?? ''}}" />
                     <label for="link3">Link</label>
                 </div>
             </div>

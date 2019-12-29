@@ -1,0 +1,91 @@
+.component-card-ptda-phone {
+  width: 100%;
+}
+
+.component-card-ptda-phone__wrapper {
+  min-height: 20rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 20px 30px 0 rgba(8, 2, 2, 0.2);
+}
+
+.component-card-ptda-phone__description {
+  margin-left: 1.6rem;
+  margin-bottom: 2.3rem;
+  margin-top: 2.3rem;
+  margin-right: 1.6rem;
+  color: #ffffff;
+}
+
+.component-card-ptda-phone__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.component-card-ptda-phone__title + .component-card-ptda-phone__text {
+  margin-top: 1rem;
+}
+
+.component-card-ptda-phone__title__highlighted {
+  display: block;
+  font-weight: 700;
+}
+
+.component-card-ptda-phone__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.component-card-ptda-phone__text + .component-card-ptda-phone__link {
+  margin-top: 1rem;
+}
+
+.component-card-ptda-phone__link {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.component-card-ptda-phone__link:hover {
+  color: inherit;
+}
+
+.component-card-ptda-phone__link__arrow {
+  display: inline-block;
+  vertical-align: middle;
+  vertical-align: text-bottom;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+  margin-left: 0.5rem;
+}
+
+.component-card-ptda-phone__link__arrow:before {
+  content: "";
+  display: inline-block;
+  background-color: #ffffff;
+  -webkit-mask-image: url("/images/arrow.svg");
+          mask-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+  padding: 0.6rem;
+}
+
+
+/*# sourceMappingURL=card-ptda-phone.css.map*/

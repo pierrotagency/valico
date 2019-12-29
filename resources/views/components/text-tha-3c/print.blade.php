@@ -15,7 +15,7 @@
 
             @if(isset($fields->cta) && $fields->cta!='')
 
-                <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="btn btn--arrow-right">{{ $fields->cta or '' }}
+                <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="btn btn--arrow-right">{{ $fields->cta ?? '' }}
                     <i class="btn--arrow-right__icon"></i>
                 </a>
 

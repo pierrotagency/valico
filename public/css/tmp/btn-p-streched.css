@@ -1,0 +1,53 @@
+.component-btn-p-streched {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.component-btn-p-streched .btn-p {
+  width: 25%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin-right: 2%;
+}
+
+.component-btn-p-streched .btn-p:last-child {
+  margin-right: 0;
+}
+
+.component-btn-p-streched .btn-p__img {
+  height: 3em;
+  -webkit-filter: gray;
+          filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.component-btn-p-streched .btn-p:hover {
+  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.component-btn-p-streched .btn-p:hover .btn-p__img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+@media (max-width: 767.98px) {
+  .component-btn-p-streched {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .component-btn-p-streched .btn-p {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/*# sourceMappingURL=btn-p-streched.css.map*/

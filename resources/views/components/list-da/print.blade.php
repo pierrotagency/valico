@@ -6,7 +6,7 @@
             @foreach($fields->list as $i)
                 <li class="component-list-da__item">
                     <p class="component-list-da__text">{!! field($i->fields->name, '') !!}</p>
-                    <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="btn btn--arrow-right">{{$i->fields->cta or ''}} <i class="btn--arrow-right__icon"></i>
+                    <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="btn btn--arrow-right">{{$i->fields->cta ?? ''}} <i class="btn--arrow-right__icon"></i>
                     </a>
                 </li>
             @endforeach

@@ -1,0 +1,190 @@
+.component-list-itda-drop {
+  display: -webkit-box;
+  display: flex;
+}
+
+.component-list-itda-drop li {
+  list-style: none;
+}
+
+@media (max-width: 991.98px) {
+  .component-list-itda-drop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+.component-list-itda-drop__container {
+  width: 65%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .component-list-itda-drop__container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-list-itda-drop__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+.component-list-itda-drop__item {
+  width: 50%;
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-itda-drop__item {
+    width: 100%;
+  }
+}
+
+.component-list-itda-drop__icon {
+  width: 2em;
+  height: 2em;
+  display: block;
+  opacity: 0.85;
+}
+
+.component-list-itda-drop__text {
+  z-index: 2;
+  margin: 0;
+  line-height: 1.4;
+  margin-left: 1em;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 300 1rem "Nunito", sans-serif;
+}
+
+.component-list-itda-drop__text span {
+  display: block;
+  margin-top: 0.2em;
+}
+
+.component-list-itda-drop__form {
+  width: 35%;
+  margin-bottom: 2em;
+}
+
+.component-list-itda-drop__form--title {
+  color: #008fd5;
+  font: 600 1.375rem "Nunito", sans-serif;
+}
+
+@media (max-width: 991.98px) {
+  .component-list-itda-drop__form {
+    width: 100%;
+  }
+}
+
+.component-list-itda-drop__form .selectric {
+  width: 100%;
+  height: 2.5em;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2em;
+  background-color: #ffffff;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-bottom: 1px solid #e6e6e6;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-list-itda-drop__form .selectric .button {
+  background-color: transparent;
+}
+
+.component-list-itda-drop__form .selectric .button::after {
+  height: 0.5rem;
+  width: 0.5rem;
+  border: none;
+  border-right: 2px solid #001a33;
+  border-bottom: 2px solid #001a33;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.component-list-itda-drop__form .selectric .label {
+  margin: 0;
+  font-size: 1rem;
+  color: #464646;
+}
+
+.component-list-itda-drop__form .selectric-wrapper {
+  width: 100%;
+  z-index: 10 !important;
+}
+
+.component-list-itda-drop__form .selectric-open {
+  z-index: 100;
+}
+
+.component-list-itda-drop__form .selectric-open .button::after {
+  top: 0.3em;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.component-list-itda-drop__form .selectric-items {
+  border: none;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .component-list-itda-drop__form .selectric-items {
+    height: auto !important;
+  }
+}
+
+.component-list-itda-drop__form .selectric-scroll ul {
+  padding: 1.5em 0;
+}
+
+.component-list-itda-drop__form .selectric-scroll ul li {
+  cursor: pointer;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  font-size: 1rem;
+  color: #464646;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.component-list-itda-drop__form .selectric-scroll ul li.selected,
+.component-list-itda-drop__form .selectric-scroll ul li.highlighted,
+.component-list-itda-drop__form .selectric-scroll ul li:hover {
+  background: transparent;
+}
+
+.component-list-itda-drop__form .selectric-scroll ul li:hover {
+  color: #008fd5;
+}
+
+.component-list-itda-drop__form .selectric-scroll ul li[data-index="0"] {
+  display: none;
+}
+
+.component-list-itda-drop__form .btn-t-portrait {
+  margin: 1em 0;
+}
+
+
+/*# sourceMappingURL=list-itda-drop.css.map*/

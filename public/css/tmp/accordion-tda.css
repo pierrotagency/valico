@@ -1,0 +1,170 @@
+.component-accordion-tda .accordion {
+  width: 100%;
+  padding-left: 0;
+  border-top: #e6e6e6 1px solid;
+}
+
+.component-accordion-tda .accordion__dropdown {
+  list-style: none;
+  padding: 1.5em 0;
+  position: relative;
+  border-bottom: #e6e6e6 1px solid;
+}
+
+.component-accordion-tda .accordion__label {
+  margin: 0;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 4rem;
+  position: relative;
+  color: #001a33 !important;
+  font: 400 1.375rem "Nunito", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .component-accordion-tda .accordion__label {
+    padding-left: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+.component-accordion-tda .accordion__label:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: url(/images/arrow-right.svg?6dca706edfddee57642030f43c87a062) no-repeat center;
+  background-size: contain;
+}
+
+.component-accordion-tda .accordion__label.active:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.component-accordion-tda .accordion__content {
+  display: none;
+  clear: both;
+  overflow: hidden;
+  padding-top: 1em;
+  /* a:not(.btn-t) {
+      display: flex;
+      margin: 1em 0;
+      align-items: center;
+      color: $greyish-brown;
+      font: $font-bold rem(16) $primary-font-family;
+      @include transition(all .3s ease-in-out);
+
+      &:after {
+          content: '';
+          width: 2em;
+          height: 2em;
+          display: block;
+          margin-left: 1em;
+          background: url('images/arrow-right.svg') no-repeat center;
+          background-size: contain;
+          @include transition(all .3s ease-in-out);
+      }
+
+      &:hover {
+          color: $navy;
+          &:after {
+              background: url('images/arrow-right_hover.svg') no-repeat center;
+              background-size: contain;
+          }
+      }
+  } */
+}
+
+.component-accordion-tda .accordion__content .col-half {
+  float: left;
+  width: 70%;
+  padding-right: 2em;
+  padding-left: 4rem;
+}
+
+@media (max-width: 767.98px) {
+  .component-accordion-tda .accordion__content .col-half {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-accordion-tda .accordion__content .col-half {
+    padding-left: 3rem;
+  }
+}
+
+.component-accordion-tda .accordion__content p,
+.component-accordion-tda .accordion__content a:not(.btn-t) {
+  margin: 0.8em 0;
+  line-height: 1.4;
+  color: #464646;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-accordion-tda .accordion__content a:not(.btn-t) {
+  color: #085294;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.component-accordion-tda .accordion__content a:not(.btn-t):hover {
+  color: #008fd5;
+}
+
+.component-accordion-tda .accordion__content ul {
+  padding-bottom: 0.5em;
+  padding-left: 0;
+}
+
+.component-accordion-tda .accordion__content ul li {
+  margin: 0.7em 0;
+  line-height: 1.4;
+  list-style: none;
+  padding-left: 0.8em;
+  color: #464646;
+  position: relative;
+  font: 500 1rem "Nunito", sans-serif;
+}
+
+.component-accordion-tda .accordion__content ul li:before {
+  content: "";
+  left: 0;
+  top: 0.5rem;
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background: #464646;
+}
+
+.component-accordion-tda .accordion .btn-t {
+  height: 4em;
+  float: right;
+  width: 100%;
+  max-width: 12em;
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .component-accordion-tda .accordion .btn-t {
+    max-width: 100%;
+  }
+}
+
+
+/*# sourceMappingURL=accordion-tda.css.map*/

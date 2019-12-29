@@ -8,20 +8,20 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input class="form-control field" name="cta" placeholder="" value="{{ $fields->cta or '' }}" />
+                    <input class="form-control field" name="cta" placeholder="" value="{{ $fields->cta ?? '' }}" />
                     <label for="cta">Texto del Link</label>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link" class="field" value="{{$fields->link or ''}}" />
+                    <input type="hidden" name="link" class="field" value="{{$fields->link ?? ''}}" />
                     <label for="link">Link</label>
                 </div>
             </div>

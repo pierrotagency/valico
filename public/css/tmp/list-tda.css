@@ -1,0 +1,75 @@
+.component-list-tda {
+  width: 100%;
+}
+
+.component-list-tda li {
+  list-style: none;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-tda {
+    width: 100%;
+  }
+
+  .component-list-tda .btn {
+    width: 100%;
+    margin-top: 1em;
+  }
+}
+
+.component-list-tda__container {
+  width: 100%;
+  padding: 0;
+}
+
+.component-list-tda__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  border-bottom: #e6e6e6 1px solid;
+  padding: 2em 0;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-tda__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+.component-list-tda__title {
+  color: #001a33;
+  font: 500 1.375rem "Nunito", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-tda__title {
+    font-size: 1.125rem;
+  }
+}
+
+.component-list-tda__text {
+  margin: 0;
+  margin-right: auto;
+  line-height: 1.4;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-list-tda__content {
+  width: 60%;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-tda__content {
+    width: 100%;
+  }
+}
+
+
+/*# sourceMappingURL=list-tda.css.map*/

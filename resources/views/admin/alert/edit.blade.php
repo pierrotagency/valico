@@ -55,7 +55,7 @@
 
                             <div class="form-group">
                                 <label for="link">Link</label>
-                                <input class="form-control" type="text" name="link" id="link" placeholder="http://..." value="{{$item->link or ''}}">
+                                <input class="form-control" type="text" name="link" id="link" placeholder="http://..." value="{{$item->link ?? ''}}">
                                 <label for="window">Abre en:</label>
                                 <select class="form-control" name="target" id="target">
                                     <option value="_self" @if($item->target === '_self')selected @endif>Misma ventana</option>

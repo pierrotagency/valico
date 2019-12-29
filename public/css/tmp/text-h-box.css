@@ -1,0 +1,32 @@
+.component-text-h-box {
+  padding-bottom: 0 !important;
+}
+
+.component-text-h-box + .component-text-h-box,
+.component-text-h-box + .component-text-tid-box,
+.component-text-h-box + .component-text-da-box,
+.component-text-h-box + .component-text-tdp-box {
+  padding-top: 1rem;
+}
+
+.component-text-h-box__container {
+  padding: 1em 1.4em;
+  border-radius: 5px;
+  border: #e6e6e6 1px solid;
+}
+
+.component-text-h-box__text p {
+  margin: 0;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 600 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-h-box a,
+.component-text-h-box a:hover {
+  color: #008fd5;
+}
+
+
+/*# sourceMappingURL=text-h-box.css.map*/

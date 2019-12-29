@@ -12,7 +12,7 @@
                 <div class="accordion__content">
                     <div class="col-half">{!! field($i->fields->description, '') !!}</div>
                     @if(isset($i->fields->cta) && $i->fields->cta!='' && $i->fields->link!='')
-                        <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="btn-t">{{$i->fields->cta or ''}}</a>
+                        <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="btn-t">{{$i->fields->cta ?? ''}}</a>
                     @endif
                 </div>
             </li>

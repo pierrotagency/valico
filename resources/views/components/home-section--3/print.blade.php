@@ -7,7 +7,7 @@
             <div class="home-title">
                 <h2 class="home-title__text"><span class="home-title__text__span">Herramientas</span> <strong class="home-title__text__span home-title__text__span--bold">Profesionales</strong></h2>
                 <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="home-title__link">
-                    <span class="home-title__link__text">{{ $fields->cta or '' }}</span>
+                    <span class="home-title__link__text">{{ $fields->cta ?? '' }}</span>
                     <span class="home-title__link__arrow"></span>
                 </a>
             </div>
@@ -19,7 +19,7 @@
                         <div class="home-list-it__icon-wrapper">
                             <img src="{{Resizer::widen(600,gg($i->fields->image,''))}}" alt="" class="home-list-it__icon">
                         </div>
-                        <span class="home-list-it__title">{{$i->fields->title or ''}}</span>
+                        <span class="home-list-it__title">{{$i->fields->title ?? ''}}</span>
                     </a>
 
                 @endforeach

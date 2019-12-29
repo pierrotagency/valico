@@ -7,7 +7,7 @@
 
         @if(has($fields->cta))
             <a href="{{ getLink($fields->link) }}"  target="{{ gg($fields->blank)==1?'_blank':'_self' }}"  class="component-title__link">
-                <span class="component-title__link__text">{{ $fields->cta or '' }}</span>
+                <span class="component-title__link__text">{{ $fields->cta ?? '' }}</span>
                 <i class="btn--arrow-right__icon component-title__link__arrow"></i>
             </a>
         @endif

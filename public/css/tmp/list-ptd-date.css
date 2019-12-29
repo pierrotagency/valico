@@ -1,0 +1,159 @@
+.component-list-ptd-date {
+  width: 100%;
+}
+
+.component-list-ptd-date li {
+  list-style: none;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-ptd-date {
+    width: 100%;
+  }
+}
+
+.component-list-ptd-date__container {
+  width: 100%;
+  padding: 0;
+}
+
+.component-list-ptd-date__item {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-ptd-date__item {
+    margin-bottom: 3em;
+  }
+}
+
+.component-list-ptd-date__link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-ptd-date__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+.component-list-ptd-date__link:hover .component-list-ptd-date__img {
+  box-shadow: 10.1px 8.2px 21px 0 rgba(0, 0, 0, 0.17);
+}
+
+.component-list-ptd-date__link:hover .component-list-ptd-date__title {
+  color: #008fd5;
+}
+
+.component-list-ptd-date__col {
+  position: relative;
+}
+
+.component-list-ptd-date__col.left {
+  width: 28%;
+}
+
+.component-list-ptd-date__col.right {
+  width: 72%;
+  padding: 0 6%;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-ptd-date__col.left,
+  .component-list-ptd-date__col.right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.component-list-ptd-date__date {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4em;
+  display: block;
+  color: white;
+  padding: 0.9em 0;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  background: #008fd5;
+  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+  font: 600 1.3125rem "Nunito", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-ptd-date__date {
+    top: calc(-75px /2 + 1em /2);
+    padding: 0;
+    width: 5.3125rem;
+    height: 4.6875rem;
+    font-size: 1.5625rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-list-ptd-date__date {
+    top: calc(-60px /2 + 1em /2);
+    width: 4.375rem;
+    height: 3.75rem;
+    font-size: 1.25rem;
+  }
+}
+
+.component-list-ptd-date__img {
+  width: 100%;
+  height: 15em;
+  margin-top: 1em;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-ptd-date__img {
+    height: 8rem;
+  }
+}
+
+.component-list-ptd-date__title {
+  margin: 1em 0 0.6em;
+  color: #464646;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font: 600 1.375rem "Nunito", sans-serif;
+}
+
+.component-list-ptd-date__text {
+  margin: 0;
+  line-height: 1.4;
+  margin-bottom: 0.8em;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-list-ptd-date__text strong {
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-ptd-date__text:first-of-type {
+    display: none;
+  }
+}
+
+
+/*# sourceMappingURL=list-ptd-date.css.map*/

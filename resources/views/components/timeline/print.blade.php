@@ -4,7 +4,7 @@
     @if(has($fields->day))
 
         <h3 class="component-timeline__date-title">
-            {{ $fields->day or '' }}
+            {{ $fields->day ?? '' }}
         </h3>
 
         @isset($fields->list)
@@ -14,7 +14,7 @@
             @foreach($fields->list as $i)
 
                 <li class="component-timeline__event">
-                    <p class="component-timeline__event-time">{{$i->fields->hour or ''}}</p>
+                    <p class="component-timeline__event-time">{{$i->fields->hour ?? ''}}</p>
                     <div class="component-timeline__event-content">
                         <h4 class="component-timeline__event-title">{!! field($i->fields->title, '') !!}</h4>
                         <p class="component-timeline__event-desc">{!! field($i->fields->body, '') !!}</p>

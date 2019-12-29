@@ -18,7 +18,7 @@
                     @if(has($i->fields->link))
                         <a href="{{$i->fields->link}}" target="{{$i->fields->blank}}">
                     @endif
-                    {{$i->fields->name or ''}}
+                    {{$i->fields->name ?? ''}}
                     @if(has($i->fields->link))
                         </a>
                     @endif

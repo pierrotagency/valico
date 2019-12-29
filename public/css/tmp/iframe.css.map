@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./resources/views/components/iframe/style.scss"],"names":[],"mappings":"AAEA;EACI;CADJ","file":"/css/tmp/iframe.css","sourcesContent":["@import \"./resources/sass/component\";\n\n.component-iframe {\n    width: 100%;\n   \n}"],"sourceRoot":""}

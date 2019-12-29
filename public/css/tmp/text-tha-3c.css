@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.component-tha-3c {
+  margin: 0;
+}
+
+* ~ .component-tha-3c {
+  margin-top: 3rem;
+}
+
+.component-tha-3c__title {
+  color: #001a33;
+  position: relative;
+  margin-bottom: 2.5em;
+  letter-spacing: -0.2px;
+  font: 500 1rem "Nunito", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .component-tha-3c__title {
+    margin-bottom: 1.5em;
+  }
+}
+
+.component-tha-3c__container {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.component-tha-3c__col {
+  width: 28%;
+  color: #464646;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-tha-3c__col strong {
+  font-weight: 500;
+}
+
+.component-tha-3c__col h2,
+.component-tha-3c__col h3 {
+  color: #001a33;
+  font-weight: 600;
+}
+
+.component-tha-3c__col h2 {
+  font-size: 1.5625rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.6px;
+}
+
+.component-tha-3c__col h3 {
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+}
+
+.component-tha-3c__col p {
+  margin-bottom: 0;
+  line-height: 1.4;
+  letter-spacing: -0.4px;
+}
+
+.component-tha-3c__col ul {
+  padding-left: 1rem;
+  list-style: initial;
+  line-height: 1.4;
+}
+
+.component-tha-3c__col a,
+.component-tha-3c__col a:hover {
+  color: #008fd5;
+}
+
+.component-tha-3c__col blockquote {
+  color: #001a33;
+  font-weight: 300;
+  font-size: 1.5625rem;
+}
+
+.component-tha-3c__col blockquote:before {
+  content: "\201C";
+}
+
+.component-tha-3c__col blockquote:after {
+  content: "\201D";
+}
+
+.component-tha-3c .btn--arrow-right {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  margin-top: 1.5em;
+  padding-right: 0;
+  padding-bottom: 1.5em;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  border-bottom: #e6e6e6 1px solid;
+}
+
+@media (max-width: 767.98px) {
+  .component-tha-3c__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .component-tha-3c__col {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+
+
+/*# sourceMappingURL=text-tha-3c.css.map*/

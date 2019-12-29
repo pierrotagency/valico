@@ -1,0 +1,88 @@
+.component-list-pt {
+  width: 100%;
+  max-width: 28.125rem;
+}
+
+@media (max-width: 650px) {
+  .component-list-pt {
+    max-width: initial !important;
+    width: calc(100% + 2rem) !important;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+.component-list-pt li {
+  list-style: none;
+}
+
+.component-list-pt__block {
+  display: block;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 650px) {
+  .component-list-pt__block {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.component-list-pt__block:hover .component-list-pt__img {
+  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.component-list-pt__block:hover .component-list-pt__text {
+  color: #008fd5;
+}
+
+.component-list-pt__img {
+  width: 100%;
+  height: 12em;
+  margin-bottom: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 650px) {
+  .component-list-pt__img {
+    height: 8em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-list-pt__img {
+    height: 7em;
+  }
+}
+
+@media (max-width: 400px) {
+  .component-list-pt__img {
+    height: 10em;
+  }
+}
+
+.component-list-pt__text {
+  color: #464646;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font: 400 1.125rem "Nunito", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-pt {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-list-pt {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    max-width: initial;
+    width: calc(100% + 2rem) !important;
+  }
+}
+
+
+/*# sourceMappingURL=list-pt.css.map*/

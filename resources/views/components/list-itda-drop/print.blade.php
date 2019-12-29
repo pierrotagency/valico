@@ -31,11 +31,11 @@
             @endisset
 
             @if(has($fields->link))
-                <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="btn btn-t btn-t-portrait">{{ $fields->cta or '' }}</a>
+                <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="btn btn-t btn-t-portrait">{{ $fields->cta ?? '' }}</a>
             @endif
 
             @if(has($fields->attach))
-                <a href="{{ $fields->attach or '#' }}" target="_blank" class="btn btn-ti btn-t-portrait">{{ $fields->cta2 or '' }}</a>
+                <a href="{{ $fields->attach or '#' }}" target="_blank" class="btn btn-ti btn-t-portrait">{{ $fields->cta2 ?? '' }}</a>
             @endif
 
         </form>

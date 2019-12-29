@@ -4,7 +4,7 @@
     @isset($fields->image)
 
         <a data-fancybox="{{$id}}" href="{{Resizer::widen(1200,gg($fields->image,''))}}" class="component-image__wrapper">
-            <img class="component-image__img" src="{{Resizer::widen(1920,gg($fields->image,''))}}" alt="{{$fields->alt or ''}}">
+            <img class="component-image__img" src="{{Resizer::widen(1920,gg($fields->image,''))}}" alt="{{$fields->alt ?? ''}}">
         </a>
 
     @else

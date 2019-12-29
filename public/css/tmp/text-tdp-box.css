@@ -1,0 +1,73 @@
+.component-text-tdp-box {
+  padding-bottom: 0 !important;
+}
+
+.component-text-tdp-box + .component-text-tdp-box,
+.component-text-tdp-box + .component-text-tid-box,
+.component-text-tdp-box + .component-text-da-box,
+.component-text-tdp-box + .component-text-h-box {
+  padding-top: 1rem;
+}
+
+.component-text-tdp-box__container {
+  display: -webkit-box;
+  display: flex;
+  padding: 1em 1.4em;
+  border-radius: 5px;
+  border: #e6e6e6 1px solid;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.component-text-tdp-box__text {
+  margin: 0;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-tdp-box__text--bold {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em !important;
+}
+
+.component-text-tdp-box__text p {
+  margin: 0 !important;
+}
+
+.component-text-tdp-box__text a {
+  color: #008fd5;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-tdp-box__text a:hover {
+  color: inherit;
+}
+
+.component-text-tdp-box__img {
+  width: 20%;
+  height: 3em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: center;
+  -o-object-position: right;
+     object-position: right;
+}
+
+@media (max-width: 767.98px) {
+  .component-text-tdp-box__content {
+    width: 80%;
+    padding-right: 4%;
+  }
+
+  .component-text-tdp-box__text--bold {
+    margin-bottom: 0;
+  }
+}
+
+
+/*# sourceMappingURL=text-tdp-box.css.map*/

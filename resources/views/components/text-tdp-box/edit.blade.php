@@ -8,19 +8,19 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="subtitle" rows="2" placeholder="">{{ $fields->subtitle or '' }}</textarea>
+                    <textarea class="form-control field" name="subtitle" rows="2" placeholder="">{{ $fields->subtitle ?? '' }}</textarea>
                     <label for="subtitle">Subtítulo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image or ''}}">
+                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image ?? ''}}">
                     <label for="image">Imagen</label>
                 </div>
             </div>

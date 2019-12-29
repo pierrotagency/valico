@@ -7,7 +7,7 @@
         <div class="component-card-1ptd-4td__wrapper">
             <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="component-card-1ptd-4td__card component-card-1ptd-4td__card--highlighted" style="background-image: url('{{Resizer::widen(900,gg($fields->image,''))}}');">
                 <div class="component-card-1ptd-4td__card__top">
-                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix or '' }}</h4>
+                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix ?? '' }}</h4>
                     <h3 class="component-card-1ptd-4td__card__title">{!! field($fields->title, '') !!}</h3>
                 </div>
                 <div class="component-card-1ptd-4td__card__bottom">
@@ -18,7 +18,7 @@
         <div class="component-card-1ptd-4td__wrapper">
             <a href="{{ getLink($fields->link2) }}" target="{{ gg($fields->blank2)==1?'_blank':'_self' }}" class="component-card-1ptd-4td__card">
                 <div class="component-card-1ptd-4td__card__top">
-                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix2 or '' }}</h4>
+                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix2 ?? '' }}</h4>
                     <h3 class="component-card-1ptd-4td__card__title">{!! field($fields->title2, '') !!}</h3>
                 </div>
                 <div class="component-card-1ptd-4td__card__bottom">
@@ -28,7 +28,7 @@
             </a>
             <a href="{{ getLink($fields->link3) }}" target="{{ gg($fields->blank3)==1?'_blank':'_self' }}" class="component-card-1ptd-4td__card">
                 <div class="component-card-1ptd-4td__card__top">
-                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix3 or '' }}</h4>
+                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix3 ?? '' }}</h4>
                     <h3 class="component-card-1ptd-4td__card__title">{!! field($fields->title3, '') !!}</h3>
                 </div>
                 <div class="component-card-1ptd-4td__card__bottom">
@@ -38,7 +38,7 @@
             </a>
             <a href="{{ getLink($fields->link4) }}" target="{{ gg($fields->blank4)==1?'_blank':'_self' }}" class="component-card-1ptd-4td__card">
                 <div class="component-card-1ptd-4td__card__top">
-                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix4 or '' }}</h4>
+                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix4 ?? '' }}</h4>
                     <h3 class="component-card-1ptd-4td__card__title">{!! field($fields->title4, '') !!}</h3>
                 </div>
                 <div class="component-card-1ptd-4td__card__bottom">
@@ -48,7 +48,7 @@
             </a>
             <a href="{{ getLink($fields->link5) }}" target="{{ gg($fields->blank5)==1?'_blank':'_self' }}" class="component-card-1ptd-4td__card">
                 <div class="component-card-1ptd-4td__card__top">
-                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix5 or '' }}</h4>
+                    <h4 class="component-card-1ptd-4td__card__subtitle">{{ $fields->appendix5 ?? '' }}</h4>
                     <h3 class="component-card-1ptd-4td__card__title">{!! field($fields->title5, '') !!}</h3>
                 </div>
                 <div class="component-card-1ptd-4td__card__bottom">

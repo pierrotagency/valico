@@ -8,13 +8,13 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="body" rows="5" placeholder="">{{ $fields->body or '' }}</textarea>
+                    <textarea class="form-control field" name="body" rows="5" placeholder="">{{ $fields->body ?? '' }}</textarea>
                     <label for="body">Cuerpo</label>
                 </div>
             </div>

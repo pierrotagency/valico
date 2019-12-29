@@ -1,0 +1,16 @@
+.component-title-small + .component {
+  padding-top: 0;
+}
+
+.component-title-small__text {
+  z-index: 2;
+  color: #001a33;
+  font-size: 1rem;
+  margin-top: 0;
+  letter-spacing: -1px;
+  font-weight: 600;
+  position: relative;
+}
+
+
+/*# sourceMappingURL=title-small.css.map*/

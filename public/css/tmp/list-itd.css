@@ -1,0 +1,85 @@
+.component-list-itd li {
+  list-style: none;
+}
+
+.component-list-itd__container {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -2.5rem;
+  padding: 0;
+}
+
+.component-list-itd__item {
+  width: 25%;
+  padding-right: 2%;
+  margin-bottom: 2.5em;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-itd__item {
+    width: 50%;
+    padding-right: 5%;
+  }
+}
+
+.component-list-itd__icon {
+  height: 5.5em;
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-itd__icon {
+    height: 4em;
+  }
+}
+
+.component-list-itd__title {
+  max-width: 8em;
+  min-height: 4em;
+  margin: 0.5em 0 0;
+  color: #464646;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font: 500 1.375rem "Nunito", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-itd__title {
+    font-size: 1.25rem;
+    min-height: 3em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .component-list-itd__title {
+    font-size: 1.125rem;
+  }
+}
+
+.component-list-itd__text {
+  margin: 0;
+  line-height: 1.4;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-itd__text {
+    font-size: 0.875rem;
+  }
+}
+
+.component-list-itd__link:hover .component-list-itd__title {
+  color: #008fd5;
+}
+
+.component-list-itd.-grow .component-list-itd__item {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+
+/*# sourceMappingURL=list-itd.css.map*/

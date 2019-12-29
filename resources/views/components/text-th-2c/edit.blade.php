@@ -10,7 +10,7 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
@@ -19,19 +19,19 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="body" rows="5" placeholder="">{{ $fields->body or '' }}</textarea>
+                    <textarea class="form-control field" name="body" rows="5" placeholder="">{{ $fields->body ?? '' }}</textarea>
                     <label for="body">Cuerpo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="cta" placeholder=""  value="{{ $fields->cta or '' }}">
+                    <input type="text" class="form-control field" name="cta" placeholder=""  value="{{ $fields->cta ?? '' }}">
                     <label for="cta">Etiqueta del Link</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link" class="field" value="{{$fields->link or ''}}" />                      
+                    <input type="hidden" name="link" class="field" value="{{$fields->link ?? ''}}" />                      
                     <label for="link">Link</label>
                 </div>
             </div>
@@ -48,19 +48,19 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="body2" rows="5" placeholder="">{{ $fields->body2 or '' }}</textarea>
+                    <textarea class="form-control field" name="body2" rows="5" placeholder="">{{ $fields->body2 ?? '' }}</textarea>
                     <label for="body2">Cuerpo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="cta2" placeholder=""  value="{{ $fields->cta2 or '' }}">
+                    <input type="text" class="form-control field" name="cta2" placeholder=""  value="{{ $fields->cta2 ?? '' }}">
                     <label for="cta2">Etiqueta del Link</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link2" class="field" value="{{$fields->link2 or ''}}" />                      
+                    <input type="hidden" name="link2" class="field" value="{{$fields->link2 ?? ''}}" />                      
                     <label for="link2">Link</label>
                 </div>
             </div>

@@ -1,0 +1,48 @@
+.component-card-tla {
+  width: 100%;
+  max-width: 350px;
+}
+
+.component-card-tla__wrapper {
+  padding: 1.3rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: #e6e6e6 1px solid;
+  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.component-card-tla__title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #464646;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.component-card-tla__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.component-card-tla__item {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.component-card-tla__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.component-card-tla__item__highlighted {
+  font-weight: 600;
+  color: #008fd5;
+}
+
+.component-card-tla__item__text {
+  font-weight: 400;
+  color: #464646;
+}
+
+
+/*# sourceMappingURL=card-tla.css.map*/

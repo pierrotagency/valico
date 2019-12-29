@@ -6,8 +6,8 @@
         <div class="col-xl-12">
 
             <div class="code-container">
-                <input type="hidden" name="html" class="field" value="{{ $fields->html or '' }}" />            
-                <textarea id="html" class="field">{{ $fields->html or '' }}</textarea>
+                <input type="hidden" name="html" class="field" value="{{ $fields->html ?? '' }}" />            
+                <textarea id="html" class="field">{{ $fields->html ?? '' }}</textarea>
 
                 
             </div>

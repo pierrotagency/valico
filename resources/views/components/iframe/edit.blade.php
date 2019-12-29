@@ -7,13 +7,13 @@
            
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="url" placeholder=""  value="{{ $fields->url or '' }}">
+                    <input type="text" class="form-control field" name="url" placeholder=""  value="{{ $fields->url ?? '' }}">
                     <label for="url">Url</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="text" class="form-control field" name="height" placeholder=""  value="{{ $fields->height or '' }}">
+                    <input type="text" class="form-control field" name="height" placeholder=""  value="{{ $fields->height ?? '' }}">
                     <label for="height">Alto (px)</label>
                 </div>
             </div>

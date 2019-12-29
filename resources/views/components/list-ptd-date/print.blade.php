@@ -79,7 +79,7 @@
                     <li class="component-list-ptd-date__item">
                         <a href="{{ getLink($i->fields->link) }}" target="{{ gg($i->fields->blank)==1?'_blank':'_self' }}" class="component-list-ptd-date__link">
                             <div class="component-list-ptd-date__col left">
-                                <span class="component-list-ptd-date__date">{{$i->fields->date or ''}}</span>
+                                <span class="component-list-ptd-date__date">{{$i->fields->date ?? ''}}</span>
                                 <div class="component-list-ptd-date__img" style="background:url(images/img_list-pt_01.png) no-repeat center;background-size:cover;"></div>
                             </div>
                             <div class="component-list-ptd-date__col right">

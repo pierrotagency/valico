@@ -1,0 +1,49 @@
+.component-card-th {
+  padding: 1.3rem !important;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+.component-card-th.component:last-child {
+  padding-bottom: 1.3rem !important;
+}
+
+.component-card-th__title {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #464646;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .component-card-th__title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.component-card-th__text {
+  font-weight: 300;
+  font-weight: 1rem;
+}
+
+.component-card-th__text a {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+  .component-card-th__text {
+    line-height: 1.2;
+  }
+}
+
+.component-card-th a {
+  color: #008fd5;
+}
+
+
+/*# sourceMappingURL=card-th.css.map*/

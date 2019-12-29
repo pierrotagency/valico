@@ -125,7 +125,7 @@
 
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="text" class="form-control" id="external" name="external" placeholder="http://.."  value="{{ $item->external or ''}}">
+                                    <input type="text" class="form-control" id="external" name="external" placeholder="http://.."  value="{{ $item->external ?? ''}}">
                                     <label for="external">Url externa</label>
                                 </div>
                             </div>

@@ -8,7 +8,7 @@
 
                 <div class="form-group">
                     <div class="form-material">
-                        <textarea class="form-control field" name="name" data-name="name" rows="2" placeholder="">{{$fields->name or ''}}</textarea>
+                        <textarea class="form-control field" name="name" data-name="name" rows="2" placeholder="">{{$fields->name ?? ''}}</textarea>
                         <label for="name">Nombre</label>
                     </div>
                 </div>

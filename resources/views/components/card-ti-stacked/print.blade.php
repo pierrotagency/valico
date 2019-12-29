@@ -7,7 +7,7 @@
         @foreach($folder->getChildren($item->getParams()) as $i)
 
             <a href="{{$i->getLink()['href']}}" class="component-card-ti-stacked__card">
-                <h3 class="component-card-ti-stacked__card__title">{{$i->cover->title or ''}}</h3>
+                <h3 class="component-card-ti-stacked__card__title">{{$i->cover->title ?? ''}}</h3>
                 @isset($i->cover->image)
                 <img src="{{Resizer::widen(160,$i->cover->image)}}" alt="" class="component-card-ti-stacked__card__icon">
                 @endisset

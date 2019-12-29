@@ -1,0 +1,16 @@
+.component-split {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.component-split .split {
+  height: 40px;
+  background: transparent;
+}
+
+.component-split .split.bigger {
+  height: 80px;
+}
+
+
+/*# sourceMappingURL=split.css.map*/

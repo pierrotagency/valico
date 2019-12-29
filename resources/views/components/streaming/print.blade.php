@@ -9,15 +9,15 @@
                     <div class="home-streaming__text-wrapper">
                         <div class="home-streaming__description">
                             @if(has($fields->label))
-                            <small class="home-streaming__live">{{ $fields->label or '' }}</small>
+                            <small class="home-streaming__live">{{ $fields->label ?? '' }}</small>
                             @endif
-                            <h3 class="home-streaming__title">{{ $fields->title or '' }}</h3>
+                            <h3 class="home-streaming__title">{{ $fields->title ?? '' }}</h3>
                             <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="home-streaming__link">
-                                <span class="home-streaming__link__text">{{$fields->cta or ''}}</span>
+                                <span class="home-streaming__link__text">{{$fields->cta ?? ''}}</span>
                                 <span class="home-streaming__link__arrow"></span>
                             </a>
                         </div>
-                        <a href="{{$fields->subscribelink or ''}}" target="{{ gg($fields->blank2)==1?'_blank':'_self' }}" class="home-streaming__subscribe d-none d-md-inline-block">
+                        <a href="{{$fields->subscribelink ?? ''}}" target="{{ gg($fields->blank2)==1?'_blank':'_self' }}" class="home-streaming__subscribe d-none d-md-inline-block">
                             <span class="home-streaming__subscribe__icon"></span>
                             <span class="home-streaming__subscribe__text">Suscribite a nuestro canal</span>
                         </a>
@@ -25,7 +25,7 @@
                     <div class="home-streaming__video">
                         <iframe id="ytplayer" class="home-streaming__video__player" type="text/html"src="https://www.youtube.com/embed/{{ $fields->video or '000000'}}?autoplay=0" frameborder="0"></iframe>
                     </div>
-                    <a href="{{$fields->subscribelink or ''}}" target="{{ gg($fields->blank2)==1?'_blank':'_self' }}" class="home-streaming__subscribe d-md-none">
+                    <a href="{{$fields->subscribelink ?? ''}}" target="{{ gg($fields->blank2)==1?'_blank':'_self' }}" class="home-streaming__subscribe d-md-none">
                         <span class="home-streaming__subscribe__icon"></span>
                         <span class="home-streaming__subscribe__text">Suscribite a nuestro canal</span>
                     </a>

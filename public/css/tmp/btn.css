@@ -1,0 +1,51 @@
+.component-btn {
+  display: block;
+  text-align: center;
+}
+
+.component-btn + .component-btn {
+  padding-top: 0;
+  margin-top: -2rem;
+}
+
+.component-btn .btn {
+  min-height: 4.5em !important;
+  margin: auto;
+  display: inline-block !important;
+  background-color: #ffffff;
+}
+
+.component-btn .btn span {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.component-btn .btn::after {
+  display: none !important;
+}
+
+.component-btn .btn:hover {
+  box-shadow: 5.6px 24.4px 30px 0 rgba(174, 174, 174, 0.14);
+}
+
+@media (max-width: 767.98px) {
+  .component-btn {
+    width: 100%;
+    margin-top: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .component-btn .btn {
+    min-height: 4.25rem !important;
+  }
+}
+
+
+/*# sourceMappingURL=btn.css.map*/

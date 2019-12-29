@@ -3,7 +3,7 @@
         @csrf
         <div class="form-group">
             <div class="form-material">
-                <input type="hidden" name="link" class="listfield" data-name="link" value="{{$cs->link or ''}}" />                      
+                <input type="hidden" name="link" class="listfield" data-name="link" value="{{$cs->link ?? ''}}" />                      
                 <label for="link">Link</label>
             </div>
         </div>
@@ -17,13 +17,13 @@
         </div>
         <div class="form-group">
             <div class="form-material">
-                <input type="hidden" class="listfield" name="desktop_image" data-name="image" value="{{ $cs->desktop_image or '' }}">
+                <input type="hidden" class="listfield" name="desktop_image" data-name="image" value="{{ $cs->desktop_image ?? '' }}">
                 <label for="image">Imagen Desktop</label>
             </div>
         </div>
         <div class="form-group">
             <div class="form-material">
-                <input type="hidden" class="listfield" name="mobile_image" data-name="image" value="{{ $cs->mobile_image or '' }}">
+                <input type="hidden" class="listfield" name="mobile_image" data-name="image" value="{{ $cs->mobile_image ?? '' }}">
                 <label for="image">Imagen Mobile</label>
             </div>
         </div>

@@ -13,7 +13,7 @@
         <div class="content">
 
             <form id="form_content" class="form-main" action="" method="post">
-                <input type="hidden" class="form-control param" name="bg" placeholder=""  value="{{ $params->bg or '' }}">
+                <input type="hidden" class="form-control param" name="bg" placeholder=""  value="{{ $params->bg ?? '' }}">
 
 
                 <h2 class="content-heading" style="padding-top: 0;">{{$item->component->title}}</h2>
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="btn-group" role="group">
-                                <button id="btn_bg" style="background-color:{{ $params->bg or '' }}" type="button" class="btn btn-circle btn-dual-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button id="btn_bg" style="background-color:{{ $params->bg ?? '' }}" type="button" class="btn btn-circle btn-dual-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-paint-brush"></i>
                                 </button>
                                 <div class="dropdown-menu min-width-150" aria-labelledby="page-header-themes-dropdown">

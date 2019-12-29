@@ -8,37 +8,37 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image or ''}}">
+                    <input type="hidden" class="field" name="image" data-name="image" value="{{$fields->image ?? ''}}">
                     <label for="image">Imagen</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title or '' }}</textarea>
+                    <textarea class="form-control field" name="title" rows="2" placeholder="">{{ $fields->title ?? '' }}</textarea>
                     <label for="title">Título</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="body" rows="5" placeholder="">{{ $fields->body or '' }}</textarea>
+                    <textarea class="form-control field" name="body" rows="5" placeholder="">{{ $fields->body ?? '' }}</textarea>
                     <label for="body">Cuerpo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="subtitle" rows="2" placeholder="">{{ $fields->subtitle or '' }}</textarea>
+                    <textarea class="form-control field" name="subtitle" rows="2" placeholder="">{{ $fields->subtitle ?? '' }}</textarea>
                     <label for="subtitle">Subtítulo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="subbody" rows="5" placeholder="">{{ $fields->subbody or '' }}</textarea>
+                    <textarea class="form-control field" name="subbody" rows="5" placeholder="">{{ $fields->subbody ?? '' }}</textarea>
                     <label for="subbody">Cuerpo Inferior</label>
                 </div>
             </div>
             {{-- <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" name="link" class="field" value="{{$fields->link or ''}}" />                      
+                    <input type="hidden" name="link" class="field" value="{{$fields->link ?? ''}}" />                      
                     <label for="link">Link</label>
                 </div>
             </div>

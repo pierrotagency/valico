@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.component-imgtxt-thp-free {
+  display: -webkit-box;
+  display: flex;
+}
+
+.component-imgtxt-thp-free__text {
+  width: 65%;
+  padding-right: 10%;
+  z-index: 2;
+}
+
+.component-imgtxt-thp-free__text a {
+  color: #008fd5;
+}
+
+.component-imgtxt-thp-free__text p {
+  font-size: 1rem;
+  color: #464646;
+  letter-spacing: -0.4px;
+  line-height: 1.4;
+}
+
+.component-imgtxt-thp-free__text blockquote {
+  color: #001a33;
+  font-weight: 300;
+  font-size: 1.5625rem;
+}
+
+.component-imgtxt-thp-free__text blockquote:before {
+  content: "\201C";
+}
+
+.component-imgtxt-thp-free__text blockquote:after {
+  content: "\201D";
+}
+
+.component-imgtxt-thp-free__title {
+  color: #001a33;
+  margin-bottom: 1rem;
+  letter-spacing: -0.6px;
+  font: 600 1.5625rem "Nunito", sans-serif;
+  z-index: 2;
+}
+
+.component-imgtxt-thp-free__desc {
+  color: #464646;
+  font: 400 1rem "Nunito", sans-serif;
+  z-index: 2;
+}
+
+.component-imgtxt-thp-free__highlighted {
+  margin-top: 2.5em;
+  padding: 1em 1.2em;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+}
+
+.component-imgtxt-thp-free__highlighted-title {
+  color: #001a33;
+  font: 400 1.375rem "Nunito", sans-serif;
+}
+
+.component-imgtxt-thp-free__highlighted-text {
+  margin: 0;
+  margin-top: 1em;
+  color: #464646;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.component-imgtxt-thp-free__highlighted-text:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.component-imgtxt-thp-free__highlighted *:last-child {
+  margin-bottom: 0;
+}
+
+.component-imgtxt-thp-free__img {
+  width: 35%;
+  z-index: 2;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.component-imgtxt-thp-free__img img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .component-imgtxt-thp-free__img.hidden-md {
+    display: none;
+  }
+}
+
+.component-imgtxt-thp-free__img.visible-md {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .component-imgtxt-thp-free__img.visible-md {
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .component-imgtxt-thp-free {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .component-imgtxt-thp-free__text {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .component-imgtxt-thp-free__img {
+    width: 100%;
+    height: 10em;
+  }
+}
+
+
+/*# sourceMappingURL=imgtxt-thp-free.css.map*/

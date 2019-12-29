@@ -5,5 +5,5 @@
 @endif
 
 @if(has($p_bg))
-    <div class="bg" style="background-color: {{$p_bg or ''}}"></div>
+    <div class="bg" style="background-color: {{$p_bg ?? ''}}"></div>
 @endif

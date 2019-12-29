@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.component-text-th-2c {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.component-text-th-2c__title {
+  color: #001a33;
+  margin-bottom: 0.8em;
+  width: 100%;
+  letter-spacing: -0.6px;
+  font: 600 1.5625rem "Nunito", sans-serif;
+}
+
+.component-text-th-2c__div {
+  margin: 0;
+  width: 48%;
+  list-style: none;
+  position: relative;
+  margin-bottom: 1em;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-th-2c__div h2,
+.component-text-th-2c__div h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.component-text-th-2c__div h2 {
+  color: #001a33;
+  margin-bottom: 1rem;
+}
+
+.component-text-th-2c__div .btn {
+  padding: 1em 0;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  border-bottom: #e6e6e6 1px solid;
+}
+
+@media (max-width: 767.98px) {
+  .component-text-th-2c__div .btn {
+    padding-bottom: 1.5em;
+  }
+}
+
+.component-text-th-2c__div a {
+  color: #008fd5;
+}
+
+.component-text-th-2c__div a:hover {
+  color: #008fd5;
+}
+
+.component-text-th-2c__div blockquote {
+  color: #001a33;
+  font-weight: 300;
+  font-size: 1.5625rem;
+}
+
+.component-text-th-2c__div blockquote:before {
+  content: "\201C";
+}
+
+.component-text-th-2c__div blockquote:after {
+  content: "\201D";
+}
+
+.component-text-th-2c__link {
+  position: relative !important;
+  display: block !important;
+  padding-right: 3rem !important;
+  white-space: normal;
+  text-align: right;
+}
+
+.component-text-th-2c__link__text {
+  display: initial !important;
+  min-width: 0;
+  text-align: right;
+}
+
+.component-text-th-2c__link__arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 767.98px) {
+  .component-text-th-2c {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .component-text-th-2c__div {
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
+}
+
+
+/*# sourceMappingURL=text-th-2c.css.map*/

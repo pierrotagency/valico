@@ -8,13 +8,13 @@
 
             <div class="form-group">
                 <div class="form-material">
-                    <textarea class="form-control field" name="description" rows="5" placeholder="">{{ $fields->description or '' }}</textarea>
+                    <textarea class="form-control field" name="description" rows="5" placeholder="">{{ $fields->description ?? '' }}</textarea>
                     <label for="description">Cuerpo</label>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-material">
-                    <input type="hidden" class="field" name="attach" value="{{$fields->attach or ''}}">
+                    <input type="hidden" class="field" name="attach" value="{{$fields->attach ?? ''}}">
                     <label for="attach">Archivo</label>
                 </div>
             </div>

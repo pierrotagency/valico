@@ -16,55 +16,55 @@
             <div class="home-services-row">
                 <div class="home-services-col home-services-col--1">
                     <section class="home-main-news">
-                        <h4 class="home-main-news__subtitle">{{ $fields->appendixa or '' }}</h4>
-                        <h3 class="home-main-news__title">{{ $fields->titlea or '' }}</h3>
+                        <h4 class="home-main-news__subtitle">{{ $fields->appendixa ?? '' }}</h4>
+                        <h3 class="home-main-news__title">{{ $fields->titlea ?? '' }}</h3>
                         <a href="{{ getLink($fields->linka1) }}" target="{{ gg($fields->blanka1)==1?'_blank':'_self' }}" class="home-main-news__link">
                             <div class="home-main-news__link__img" style="background-image: url('{{Resizer::widen(900,gg($fields->imagea1,''))}}')"></div>
                             <div class="home-main-news__link__description">
-                                <h5 class="home-main-news__link__title">{{ $fields->titlea1 or '' }}</h5>
-                                <p class="home-main-news__link__text">{{ $fields->descriptiona1 or '' }}</p>
+                                <h5 class="home-main-news__link__title">{{ $fields->titlea1 ?? '' }}</h5>
+                                <p class="home-main-news__link__text">{{ $fields->descriptiona1 ?? '' }}</p>
                             </div>
                         </a>
                         <a href="{{ getLink($fields->linka2) }}" target="{{ gg($fields->blanka2)==1?'_blank':'_self' }}" class="home-main-news__link">
                             <div class="home-main-news__link__img" style="background-image: url('{{Resizer::widen(900,gg($fields->imagea2,''))}}')"></div>
                             <div class="home-main-news__link__description">
-                                <h5 class="home-main-news__link__title">{{ $fields->titlea2 or '' }}</h5>
-                                <p class="home-main-news__link__text">{{ $fields->descriptiona2 or '' }}</p>
+                                <h5 class="home-main-news__link__title">{{ $fields->titlea2 ?? '' }}</h5>
+                                <p class="home-main-news__link__text">{{ $fields->descriptiona2 ?? '' }}</p>
                             </div>
                         </a>
                         <a href="{{ getLink($fields->linka) }}" target="{{ gg($fields->blanka)==1?'_blank':'_self' }}" class="home-main-news__cta">
-                            <span class="home-main-news__cta__text">{{ $fields->ctaa or '' }}</span>
+                            <span class="home-main-news__cta__text">{{ $fields->ctaa ?? '' }}</span>
                             <span class="home-main-news__cta__arrow"></span>
                         </a>
                     </section>
                 </div>
                 <div class="home-services-col home-services-col--2">
                     <section class="home-main-news">
-                        <h4 class="home-main-news__subtitle">{{ $fields->appendixb or '' }}</h4>
-                        <h3 class="home-main-news__title">{{ $fields->titleb or '' }}</h3>
+                        <h4 class="home-main-news__subtitle">{{ $fields->appendixb ?? '' }}</h4>
+                        <h3 class="home-main-news__title">{{ $fields->titleb ?? '' }}</h3>
                         <a href="{{ getLink($fields->linkb1) }}" target="{{ gg($fields->blankb1)==1?'_blank':'_self' }}" class="home-main-news__link">
                             <div class="home-main-news__link__img" style="background-image: url('{{Resizer::widen(900,gg($fields->imageb1,''))}}')"></div>
                             <div class="home-main-news__link__description">
-                                <h5 class="home-main-news__link__title">{{ $fields->titleb1 or '' }}</h5>
-                                <p class="home-main-news__link__text">{{ $fields->descriptionb1 or '' }}</p>
+                                <h5 class="home-main-news__link__title">{{ $fields->titleb1 ?? '' }}</h5>
+                                <p class="home-main-news__link__text">{{ $fields->descriptionb1 ?? '' }}</p>
                             </div>
                         </a>
                         <a href="{{ getLink($fields->linkb2) }}" target="{{ gg($fields->blankb2)==1?'_blank':'_self' }}" class="home-main-news__link">
                             <div class="home-main-news__link__img" style="background-image: url('{{Resizer::widen(900,gg($fields->imageb2,''))}}')"></div>
                             <div class="home-main-news__link__description">
-                                <h5 class="home-main-news__link__title">{{ $fields->titleb2 or '' }}</h5>
-                                <p class="home-main-news__link__text">{{ $fields->descriptionb2 or '' }}</p>
+                                <h5 class="home-main-news__link__title">{{ $fields->titleb2 ?? '' }}</h5>
+                                <p class="home-main-news__link__text">{{ $fields->descriptionb2 ?? '' }}</p>
                             </div>
                         </a>
                         <a href="{{ getLink($fields->linkb) }}" target="{{ gg($fields->blankb)==1?'_blank':'_self' }}" class="home-main-news__cta">
-                            <span class="home-main-news__cta__text">{{ $fields->ctab or '' }}</span>
+                            <span class="home-main-news__cta__text">{{ $fields->ctab ?? '' }}</span>
                             <span class="home-main-news__cta__arrow"></span>
                         </a>
                     </section>
                 </div>
                 <div class="home-services-col home-services-col--3">
                     <section class="home-related-news">
-                        <h3 class="home-related-news__title">{{ $fields->titlec or '' }}</h3>
+                        <h3 class="home-related-news__title">{{ $fields->titlec ?? '' }}</h3>
                         <ul class="home-related-news__list">
 
                             @isset($fields->folders)

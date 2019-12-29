@@ -1,0 +1,76 @@
+.component-tab__wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.component-tab__container {
+  padding-top: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  min-width: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  margin-bottom: -20px;
+}
+
+.component-tab__link {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  border: none;
+  color: #001a33;
+  cursor: pointer;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background: transparent;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #c1c7cd;
+  font: 400 1rem "Nunito", sans-serif;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.component-tab__link::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.component-tab__link:hover {
+  color: #008fd5;
+}
+
+.component-tab__link:focus,
+.component-tab__link:active {
+  outline: 0;
+}
+
+.component-tab__link.active {
+  border-color: white;
+  box-shadow: 0px -6px 10px 0 rgba(160, 160, 160, 0.19);
+  color: #008fd5;
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .component-tab__link {
+    min-width: 140px;
+  }
+}
+
+.component-tab .tabcontent {
+  display: none;
+  padding-top: 40px;
+}
+
+
+/*# sourceMappingURL=tab.css.map*/

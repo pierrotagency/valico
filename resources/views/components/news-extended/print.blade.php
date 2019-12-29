@@ -5,10 +5,10 @@
 
         <div class="container">
             <div class="home-title">
-                {{-- <h2 class="home-title__text">{{$fields->title or ''}}</h2> --}}
+                {{-- <h2 class="home-title__text">{{$fields->title ?? ''}}</h2> --}}
                 <h2 class="home-title__text"><span class="home-title__text__span">Más</span> <strong class="home-title__text__span home-title__text__span--bold">Noticias</strong></h2>
             <a href="{{ getLink($fields->link) }}" class="home-title__link">
-                    <span class="home-title__link__text">{{$fields->cta or ''}}</span>
+                    <span class="home-title__link__text">{{$fields->cta ?? ''}}</span>
                     <span class="home-title__link__arrow"></span>
                 </a>
             </div>

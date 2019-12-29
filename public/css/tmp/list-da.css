@@ -1,0 +1,96 @@
+.component-list-da {
+  width: 100%;
+}
+
+.component-list-da li {
+  list-style: none;
+}
+
+.component-list-da__container {
+  width: 100%;
+  padding: 0;
+}
+
+.component-list-da__item {
+  padding: 2em 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  border-bottom: #e6e6e6 1px solid;
+}
+
+.component-list-da__text {
+  margin: 0;
+  margin-right: auto;
+  line-height: 1.4;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .component-list-da__text {
+    font-size: 1rem !important;
+  }
+}
+
+.component-list-da .btn--arrow-right {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #464646;
+  padding-right: 0;
+  font: 600 1rem "Nunito", sans-serif;
+}
+
+.component-list-da .btn--arrow-right svg {
+  fill: #001a33;
+  height: 2em;
+  margin-left: 1em;
+  border-radius: 50%;
+}
+
+.component-list-da .btn--arrow-right:hover {
+  color: #001a33;
+}
+
+.component-list-da .btn--arrow-right:hover svg {
+  fill: #008fd5;
+  background: #008fd5;
+}
+
+.component-list-da .btn--arrow-right:hover svg .path-arrow {
+  fill: white;
+}
+
+@media (max-width: 767.98px) {
+  .component-list-da {
+    width: 100%;
+  }
+
+  .component-list-da__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .component-list-da__text {
+    font-size: 1.125rem;
+  }
+
+  .component-list-da .btn {
+    margin-top: 1em;
+    margin-left: auto;
+  }
+
+  .component-list-da .btn--arrow-right {
+    font-size: 1.0625rem;
+  }
+}
+
+
+/*# sourceMappingURL=list-da.css.map*/

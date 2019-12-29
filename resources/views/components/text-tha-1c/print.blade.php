@@ -7,7 +7,7 @@
             <h3 class="component-text-tha-1c__title">{!! field($fields->title, '') !!}</h3>
             <p class="component-text-tha-1c__text">{!! field($fields->description, '') !!}</p>
             <a href="{{ getLink($fields->link) }}" target="{{ gg($fields->blank)==1?'_blank':'_self' }}" class="btn btn--arrow-right component-text-tha-1c__link">
-                <span class="component-text-tha-1c__link__text">{{ $fields->cta or '' }}</span>
+                <span class="component-text-tha-1c__link__text">{{ $fields->cta ?? '' }}</span>
                 <i class="btn--arrow-right__icon component-text-tha-1c__link__arrow"></i>
             </a>
         </div>

@@ -87,31 +87,31 @@
 
                             <div class="form-group">
                                 <div class="form-material">
-                                    <textarea class="form-control listfield" name="title" data-name="title" rows="2" placeholder="">{{ $i->fields->title or '' }}</textarea>
+                                    <textarea class="form-control listfield" name="title" data-name="title" rows="2" placeholder="">{{ $i->fields->title ?? '' }}</textarea>
                                     <label for="name">Título</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-material">
-                                    <textarea class="form-control listfield" name="description" data-name="description" rows="2" placeholder="">{{ $i->fields->description or '' }}</textarea>
+                                    <textarea class="form-control listfield" name="description" data-name="description" rows="2" placeholder="">{{ $i->fields->description ?? '' }}</textarea>
                                     <label for="description">Descripción</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="text" class="form-control listfield" name="cta" data-name="cta" placeholder="" value="{{$i->fields->cta or ''}}">
+                                    <input type="text" class="form-control listfield" name="cta" data-name="cta" placeholder="" value="{{$i->fields->cta ?? ''}}">
                                     <label for="name">Etiqueta del Link</label>
                                 </div>
                             </div>
                             {{-- <div class="form-group">
                                 <div class="form-material">
-                                    <input type="text" class="form-control listfield" name="link" data-name="link" placeholder="" value="{{$i->fields->link or ''}}">
+                                    <input type="text" class="form-control listfield" name="link" data-name="link" placeholder="" value="{{$i->fields->link ?? ''}}">
                                     <label for="link">Link</label>
                                 </div>
                             </div> --}}
                             <div class="form-group">
                                 <div class="form-material">
-                                    <input type="hidden" name="link" class="listfield" data-name="link" value="{{$i->fields->link or ''}}" />
+                                    <input type="hidden" name="link" class="listfield" data-name="link" value="{{$i->fields->link ?? ''}}" />
                                     <label for="link">Link</label>
                                 </div>
                             </div>

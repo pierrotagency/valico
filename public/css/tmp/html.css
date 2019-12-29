@@ -1,0 +1,18 @@
+.component-html {
+  width: 100%;
+}
+
+.component-html .code-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.component-html .code-container:last-child {
+  margin-bottom: 0;
+}
+
+
+/*# sourceMappingURL=html.css.map*/

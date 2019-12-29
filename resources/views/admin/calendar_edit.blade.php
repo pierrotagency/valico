@@ -65,7 +65,7 @@
                                 
                                 <div class="col-8">
                                     <label for="link">Link</label>
-                                    <input type="hidden" name="url" value="{{$event->url or ''}}" />
+                                    <input type="hidden" name="url" value="{{$event->url ?? ''}}" />
                                 </div>
                                 <div class="col-4">
                                     <label for="link">Abrir en</label>

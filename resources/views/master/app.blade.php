@@ -24,7 +24,7 @@
                             <div class="home-alert__wrapper">
                                 <div class="home-alert__description">
                                     <img src="./images/icons/alert.svg" alt="" class="home-alert__icon">
-                                    <p class="home-alert__text"><strong class="home-alert__text__highlighted">{{$a->title or ''}}</strong> <span class="home-alert__text__text">{{$a->description or ''}}</span></p>
+                                    <p class="home-alert__text"><strong class="home-alert__text__highlighted">{{$a->title ?? ''}}</strong> <span class="home-alert__text__text">{{$a->description ?? ''}}</span></p>
                                 </div>
                                 <button class="home-alert__close-btn js-home-alert-close-btn"><img src="./images/icons/close.svg" alt="Cerrar" class="home-alert__close-btn__icon"></button>
                             </div>

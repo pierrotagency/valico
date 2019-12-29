@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.component-text-tha-1c__container {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.component-text-tha-1c__title {
+  color: #001a33;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.6px;
+  font: 500 1.5625rem "Nunito", sans-serif;
+}
+
+.component-text-tha-1c p {
+  margin: 0;
+  margin-bottom: 1em;
+  color: #464646;
+  letter-spacing: -0.4px;
+  font: 400 1rem "Nunito", sans-serif;
+  line-height: 1.4;
+}
+
+.component-text-tha-1c p a,
+.component-text-tha-1c p a:hover {
+  color: #008fd5;
+}
+
+.component-text-tha-1c blockquote {
+  color: #001a33;
+  font-weight: 300;
+  font-size: 1.5625rem;
+}
+
+.component-text-tha-1c blockquote:before {
+  content: "\201C";
+}
+
+.component-text-tha-1c blockquote:after {
+  content: "\201D";
+}
+
+.component-text-tha-1c__link {
+  position: relative;
+  display: block !important;
+  padding-right: 3rem;
+  white-space: normal;
+  text-align: right;
+}
+
+.component-text-tha-1c__link__text {
+  display: initial !important;
+  min-width: 0;
+  text-align: right;
+}
+
+.component-text-tha-1c__link__arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+
+/*# sourceMappingURL=text-tha-1c.css.map*/
