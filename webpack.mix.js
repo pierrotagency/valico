@@ -1,5 +1,17 @@
 const mix = require('laravel-mix');
 
+
+
+
+
+if (!mix.inProduction()) {
+   mix.webpackConfig({
+           devtool: 'source-map' // "inline-source-map"
+      })
+      .sourceMaps()
+}
+
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,19 +23,11 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix.react('resources/js/app.js', 'public/js')
-//    .sass('resources/sass/app.scss', 'public/css');
+mix.react('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
 
 
 
-
-
-if (!mix.inProduction()) {
-   mix.webpackConfig({
-           devtool: 'source-map' // "inline-source-map"
-      })
-      .sourceMaps()
-}
 
 
 // ########################
@@ -49,7 +53,7 @@ mix.scripts([
 // APP
 // ########################
 
-// -> /public/js/app.js
+// -> /public/js/vendor.js
 mix.scripts([
 
    // vendor
@@ -63,14 +67,14 @@ mix.scripts([
    'node_modules/js-cookie/src/js.cookie.js', // usado para alerts ya vistos por usuario
 
    // custom
-   'resources/js/app/search.js',
-   'resources/js/app.js' // código comun en el app, que no son librerias
+   // 'resources/js/app/search.js',
+   // 'resources/js/app.js' // código comun en el app, que no son librerias
 
-], 'public/js/app.js').version();
+], 'public/js/vendor.js').version();
 
 
 // -> /public/css/app.css
-mix.sass('resources/sass/app.scss', 'public/css').version();
+// mix.sass('resources/sass/app.scss', 'public/css').version();
 
 
 

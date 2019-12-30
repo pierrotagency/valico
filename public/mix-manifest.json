@@ -1,4 +1,5 @@
 {
+    "/js/app.js": "/js/app.js?id=096598f3561120079dfa",
     "/css/app.css": "/css/app.css?id=d4fa69a191cb85c441e7",
     "/css/admin.css": "/css/admin.css?id=75b31aa45b26066ede3c",
     "/css/tmp/accordion-tda.css": "/css/tmp/accordion-tda.css?id=1cf0b22e798759b1d381",
@@ -76,7 +77,7 @@
     "/css/tmp/title-large.css": "/css/tmp/title-large.css?id=94c02089935edc40d4f7",
     "/css/tmp/title-small.css": "/css/tmp/title-small.css?id=80e8a6df58dee40857ca",
     "/css/tmp/video-youtube.css": "/css/tmp/video-youtube.css?id=39329541cde05a65119c",
-    "/mix.js.map": "/mix.js.map?id=1fdb40f5081fd8949f7c",
+    "/js/app.js.map": "/js/app.js.map?id=f32333dfc90ac03733dd",
     "/css/app.css.map": "/css/app.css.map?id=43ae679400ca9b729a9b",
     "/css/admin.css.map": "/css/admin.css.map?id=d25583098bdb0dc4ec82",
     "/css/tmp/accordion-tda.css.map": "/css/tmp/accordion-tda.css.map?id=a8213a2e2d19dd2b24d1",
@@ -155,7 +156,7 @@
     "/css/tmp/title-small.css.map": "/css/tmp/title-small.css.map?id=16be19d969f8b6236fcc",
     "/css/tmp/video-youtube.css.map": "/css/tmp/video-youtube.css.map?id=ada4d50b89a7bc6f9648",
     "/js/common.js": "/js/common.js?id=1d375484ea7a7c6936f6",
-    "/js/app.js": "/js/app.js?id=fac5d2d0f52fd94aeda1",
+    "/js/vendor.js": "/js/vendor.js?id=3e88031a407d933563da",
     "/js/admin.js": "/js/admin.js?id=0aded3622370b7f09e97",
     "/css/components.css": "/css/components.css?id=f0107fb3354b30ab5b76"
 }

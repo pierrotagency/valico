@@ -494,7 +494,7 @@
                     <div class="block-content">
                         <form class="form-add" action="" method="post">
 
-                            <input type="hidden" name="parent_id" value="{{$item->id or '-1'}}" />
+                            <input type="hidden" name="parent_id" value="{{$item->id ?? '-1'}}" />
 
                             <div class="form-group row">
                                 <div class="col-12">
@@ -715,7 +715,7 @@
 
                 var data = {};
                     data.items = [];
-                    data.id = '{{ $item->id or '-1'}}';
+                    data.id = '{{ $item->id ?? '-1'}}';
                 
                 $('#items tr').each(function(){                   
                     var itemId = $(this).attr("data-id");

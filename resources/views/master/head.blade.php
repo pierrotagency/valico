@@ -11,8 +11,9 @@
     <title>{{ $pageTitle or config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ mix('js/common.js') }}"></script>
-    <script src="{{ mix('js/app.js') }}" defer22></script>
+    <script src="{{ mix('js/vendor.js') }}" defer></script>
+    <script src="{{ mix('js/common.js') }}" defer></script>
+    {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
 
 
     @isset($item)

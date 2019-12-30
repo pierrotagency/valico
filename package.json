@@ -1,4 +1,7 @@
 {
+    "name": "valico",
+    "author": "Rodrigo Butta / Pierrot",
+    "version": "0.1.0",
     "private": true,
     "scripts": {
         "dev": "npm run development",

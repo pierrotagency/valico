@@ -21,12 +21,35 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
     {
-        return view('admin.home');
+        $user = auth()->user();
+
+        return view('admin.home')->with(compact("user"));
     }
+
+    public function currentUser(Request $request){    
+           
+        if($request->ajax()){
+            $user = auth()->user();
+            return response()->json($user);
+        }
+
+    }
+
+
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    // public function index()
+    // {
+    //     return view('admin.home');
+    // }
 
 
 
