@@ -1,9 +1,9 @@
 <footer class="main-footer">
     <div class="container">
         <div class="main-footer__col main-footer__col--logo">
-            <img src="../assets/images/footer-logo.svg" alt="Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires">
-            <img src="../assets/images/data-fiscal.jpg" class="main-footer__data-fiscal hidden-md" alt="Data Fiscal">
-            <img src="../assets/images/defensa-al-consumidor.jpg" class="main-footer__defensa-consumidor hidden-md" alt="Defensa al consumidor">
+            <img src="../images/footer-logo.svg" alt="Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires">
+            <img src="../images/data-fiscal.jpg" class="main-footer__data-fiscal hidden-md" alt="Data Fiscal">
+            <img src="../images/defensa-al-consumidor.jpg" class="main-footer__defensa-consumidor hidden-md" alt="Defensa al consumidor">
         </div>
 
         <div class="main-footer__col main-footer__col--contact">
@@ -31,12 +31,12 @@
                     <a href="https://www.linkedin.com/company/consejo-profesional-de-ciencias-econ-micas-de-la-ciudad-aut-noma-de-buenos-aires/" target="_blank"><i class="icon icon-linkedin"></i></i></a>
                 </div>
                 <a href="http://defensadelconsumidor.buenosaires.gov.ar/" target="_blank">
-                    <img src="../assets/images/defensa-al-consumidor.jpg" class="main-footer__defensa-consumidor" alt="Defensa al consumidor">
+                    <img src="../images/defensa-al-consumidor.jpg" class="main-footer__defensa-consumidor" alt="Defensa al consumidor">
                 </a>
             </div>
 
             <a href="http://qr.afip.gob.ar/?qr=vYsE3JgIO4iAMmZf7uX1jg,," target="_F960AFIPInfo">
-                <img src="../assets/images/data-fiscal.jpg" class="main-footer__data-fiscal" alt="Data Fiscal">
+                <img src="../images/data-fiscal.jpg" class="main-footer__data-fiscal" alt="Data Fiscal">
             </a>
 
             <small class="main-footer__copy small">

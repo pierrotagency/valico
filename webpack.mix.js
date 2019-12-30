@@ -38,7 +38,7 @@ mix.scripts([
    'node_modules/slick-carousel/slick/slick.min.js',
    'node_modules/selectric/public/jquery.selectric.min.js',
 
-   // custom
+   // common
    'resources/js/common.js' // código comun en el common, que no son librerias
 
 ], 'public/js/common.js').version();
@@ -158,7 +158,7 @@ function compileComponentsStyles() {
       var source_path = relative_path + paths[i] + '/style.scss';
       var dest_path = 'public/css/tmp/' + paths[i] + '.css';
 
-      console.log(source_path);
+      // console.log(source_path);
 
       if (fs.existsSync(source_path)) {
          mix.sass(source_path, dest_path);

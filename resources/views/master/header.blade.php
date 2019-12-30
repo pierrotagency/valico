@@ -110,8 +110,8 @@
                 </nav>
 
                 <a href="/" class="main-header__logo-link">
-                  <img class="main-header__logo visible-sm" src="../assets/images/header-logo.svg" alt="Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires" />
-                  <img class="main-header__logo hidden-sm" src="../assets/images/header-logo_mobile.svg" alt="Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires"/>
+                  <img class="main-header__logo visible-sm" src="../images/header-logo.svg" alt="Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires" />
+                  <img class="main-header__logo hidden-sm" src="../images/header-logo_mobile.svg" alt="Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires"/>
                 </a>
 
                 <nav class="main-header__account visible-sm">
