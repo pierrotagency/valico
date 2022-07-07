@@ -39,7 +39,7 @@
         "html5sortable": "^0.9.17",
         "jquery-contextmenu": "^2.9.0",
         "js-cookie": "^2.2.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "responsive-nav": "^1.0.39",
         "select2": "^4.0.12",
         "selectric": "^1.13.0",
